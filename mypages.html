@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sv"><!--lang= swedish-->
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
+    <title>Färdtjänstbokning</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mypages.css"><!--css file-->
+    <link rel="icon" type="image/ico"  href="bilder/bil.ico">
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
+        <div class="menu.resp"><!--Class containing menu navigation-->
+            <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
+               <span class="menu-icon"><!--designing the appearance of the menu-->
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+               </span>
+               <span class="menu-text">MENY</span><!--text visible for menu-->
+           </button>
+           <nav id="nav-menu"><!--navigation menu-->
+               <button class="menu-btn close" id="close-menu"><!--Button to close the menu-->
+                   <span class="menu-icon">
+                       <span class="bars cross1"></span>
+                       <span class="bars cross2"></span>
+                   </span>
+                   <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
+               </button>
+
+<ul class="menu">
+    <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
+    <li><a href="canceled.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
+    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
+    <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
+    </ul>
+    </nav>
+    <script>//javascript for functions for menu navigation.
+        //Variables to access the respective id:
+           let openButton = document.getElementById("open-menu");
+           let closeButton = document.getElementById("close-menu");
+           //added event listeners on the elements
+           openButton.addEventListener('click', toggleMenu);
+           closeButton.addEventListener('click', toggleMenu);
+           //Function that tells what the menu should do when it is hidden or visible.
+           function toggleMenu() {
+               let navMenuElement = document.getElementById("nav-menu");
+               let style = window.getComputedStyle(navMenuElement);
+               if(style.display === "none") {
+                   navMenuElement.style.display = "block";
+               } else {
+                   navMenuElement.style.display = "none";
+               }
+           }
+       </script>
+       </div>
+    </header>
+    <figure class="header-pic">
+        <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
+    <section class="overlay-text">
+        <h1>Mina sidor:</h1>
+    </section>
+</figure>
+
+
+<div class="grid-container">
+
+<section class="personalinfo">
+<h2>Mina uppgifter: <i class="fa-solid fa-address-card"></i></h2>
+<p><b>Förnamn:</b> Birgitta</p>
+<p><b>Efternamn:</b> Andersson</p>
+<p><b>Personnummer:</b> 19491115-xxxx</p>
+<p><b>Hemadress:</b> Stigvägen 15, 442 46 Kareby.</p>
+<p><b>Telefonnummer:</b> xxxx-371630</p>
+<p><b>Mailadress:</b> biggan49@hotmail.com</p>
+<br>
+<h3>Tillval:</h3>
+<p><b>Hjälpmedel:</b> Rullstol</p>
+<p><b>Ledsagare:</b> Nej</p>
+<p><b>Övrigt:</b> Behöver hjälp med in-och utrullning i rullstolen.</p>
+</section>
+
+<button class="booking" id="click.button" type="submit"><i class="fa-solid fa-circle-check"></i> Boka resa</button>
+<script>
+    document.getElementById("click.button").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
+        window.location.href="booking.html";
+    });
+    </script>
+
+<button class="canceled" id="click.button1" type="submit"><i class="fa-solid fa-xmark"></i> Avboka resa</button>
+<script>
+    document.getElementById("click.button1").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
+        window.location.href="canceled.html";
+    });
+    </script>
+
+    <footer class="object4">
+    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:fardtjanstbokning.kungalv@hotmail.com<br>
+    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
+    </footer>
+
+
+    </div>
+</body>
+</html>
