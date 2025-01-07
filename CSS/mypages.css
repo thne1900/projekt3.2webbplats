@@ -16,7 +16,6 @@ margin-right: auto;}
     width:8%;
     height:auto;}
 
-
 .fa-solid {font-size: 25px;}
 .fa-address-card {font-size:30px;}
 
@@ -52,8 +51,7 @@ font-weight: bold;
 color:white;
 text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
 text-align: center;
-margin:0;
-z-index: 1;}
+margin:0;}
 
 nav { /*the nav element has been given color, sizes of text, width and height and line-height as well how it should be displayed.*/
     background-color: #B4BBDF;
@@ -78,16 +76,19 @@ nav { /*the nav element has been given color, sizes of text, width and height an
         font-size: 1.5em;
         line-height: 1.5;}
 
-        
-
  nav li {/*The nav element's object has been sized and padded.*/
         padding: 0.8em 0;
         width: 100%;}
-    
-    nav a {/*The links of the nav element have been given color, design and padding.*/
-        color: black;
-        text-decoration: none;
-        padding: 0 1em;}
+
+        nav a { border-radius:15px;
+            background-color: #D3E6FE;
+            color:black;
+            font-weight: 500;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            padding:10px;}
+
+    nav a:active {background-color: white;}
 
     .menu a { border-radius:15px;
         background-color: #D3E6FE;
@@ -107,7 +108,7 @@ nav { /*the nav element has been given color, sizes of text, width and height an
         cursor: pointer;
         width:120px;
         height:60px;
-    margin: 0 2em;}
+        margin: 0 2em;}
 
     .menu-btn:hover {/*menu button on hover gets background color and shadow.*/
         background-color:rgb(83, 135, 191);
@@ -121,7 +122,7 @@ nav { /*the nav element has been given color, sizes of text, width and height an
         height: 3px;
         background-color:black;
         margin: 5px 0;
-    align-items: center;}
+        align-items: center;}
     
     .menu-text {/*the menu text has been given size, design, line height and color.*/
         font-size: 1.5em;
@@ -133,7 +134,7 @@ nav { /*the nav element has been given color, sizes of text, width and height an
         margin: 1em 1.5em;
         padding: 10px 15px;
         background-color: #D3E6FE;
-    text-align: center;}
+        text-align: center;}
     
     .cross1 {/*the cross on the close button gets size, design, position and placement.*/
         width: 25px;
@@ -157,39 +158,104 @@ nav { /*the nav element has been given color, sizes of text, width and height an
 
 .personalinfo{grid-row-start: 1;
     grid-column-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
     grid-column-end: 1;
     border-radius:15px;
     background-color: #B4BBDF;
-    padding:4%;
-margin-left: 8%;}
+    padding-left:4%;
+    padding-right: 4%;
+    padding-bottom: auto;
+    margin-left: 8%;
+    margin-bottom: 8%;}
 
 .personalinfo p {font-size: 1.1em;
-padding-bottom: -1%;}
+line-height: 1.2;}
 
 .booking {grid-area:1/2/1/2;
-    width:200px;
+    width:220px;
     height:80px;
-font-size: 1.2em;
-font-weight: bold;
-line-height: 1.6;
-color:black;
-background-color: #D3E6FE;
-border-radius: 15px;
-padding:4%;
-margin-bottom: 2%;}
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6;
+    color:black;
+    background-color: #D3E6FE;
+    border-radius: 15px;
+    padding:4%;
+margin-left: auto;
+margin-right: auto;}
 
-.canceled {grid-area:2/2/2/2;
-    width:200px;
+.canceled {grid-area:1/2/1/2;
+    margin-top: 100px;
+    width:220px;
     height:80px;
-font-size: 1.2em;
-font-weight: bold;
-line-height: 1.6;
-color:black;
-background-color: #D3E6FE;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6;
+    color:black;
+    background-color: #D3E6FE;
+    border-radius: 15px;
+    padding:4%;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+.bookingtrips {grid-area: 1/3/2/3;
+background-color: #B4BBDF;
 border-radius: 15px;
 padding:4%;
-}
+text-align: center;
+margin-right: 8%;}
+
+.change {width:230px;
+    height:80px;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6;
+    color:black;
+    background-color: #D3E6FE;
+    border-radius: 15px;
+    padding:4%;
+    margin-left: auto;
+    margin-right: auto;}
+
+.card {grid-area:2/2/3/4;
+    margin-top: 10%;
+    background-color:#DCF1E0;
+padding-left:4%;
+padding-right: 4%;
+padding-bottom: 8%;
+border-radius: 15px;
+margin-right: 8%;
+margin-bottom: 4%;
+text-align: center;
+max-width: 100%;
+height: auto;}
+
+.card p {font-size:1.2em;
+    line-height: 1.4;
+text-align: center;}
+
+.fa-camera {font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.cardtext {font-size: 0.8em;
+text-align: center;}
+
+.logout {grid-area:1/2/1/2;
+    margin-top: 300px;
+    width:280px;
+    height:80px;
+    font-size: 1.4em;
+    font-weight: bold;
+    line-height: 1.6;
+    color:black;
+    background-color: #D3E6FE;
+    border-radius: 15px;
+    padding:4%;
+    margin-left: auto;
+    margin-right: auto;}
 
 footer {
     font-size: 1em;
@@ -218,7 +284,33 @@ footer {
         padding: 1.2em 0;}
 }
 
-@media (max-width:1024px) {
+@media (max-width:1024px) and (min-width:600px) {
 h1 {font-size: 2em;}
+
+}
+
+@media (max-width:600px) {
+    h1 {font-size: 1.6em;}
+    .personalinfo {grid-area:1/1/2/4;
+        margin-left:4%;
+        margin-right: 4%;
+        border-radius: 0;}
+    .personalinfo p {line-height: 1.5;
+    font-size: 1em;}
+        .bookingtrips {grid-area:2/1/3/4;
+        border-radius: 0;
+    margin-left: 4%;
+    margin-right:4%;}
+        .booking {grid-area:3/1/3/4;
+        margin-top:4%;}
+        .canceled{grid-area:3/1/3/4;
+        margin-top: 120px;}
+        .logout {grid-area:3/1/3/4;
+        margin-top:220px;
+    margin-bottom:8%;}
+        .card {display: none;}
+        .object4 {grid-area:6/1/7/4;}
+        footer {font-size: 0.7em;}
+
 
 }
