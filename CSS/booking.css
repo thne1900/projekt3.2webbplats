@@ -1,0 +1,147 @@
+body {background-color:#FFFCFB;
+    font-family: "inter", sans-serif;
+    color:black;
+    font-size: 1.2em;
+    line-height: 1.5;
+    max-width: 1512px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;}
+    
+    #logo {
+        position:absolute;
+        margin-left:1%;
+        top:2%;
+        border-radius: 15px;
+        width:8%;
+        height:auto;}
+
+        header {/*the header element has been given color, sizes, placement, margin and padding.*/
+            background-color:#B4BBDF;
+            max-width: 1512px;
+            height: 100px;
+            box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
+            margin:0;
+            position:relative;
+            padding:0 1em;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;}
+        
+    #header-pic{
+            width:100%;
+            height:auto;
+            object-fit: cover;}
+    
+    .header-pic {/*margin-top: 4%;*/
+                text-align: center;}
+    
+    .overlay-text {
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;}
+    
+    h1 {font-size: 2.5em;
+    font-weight: bold;
+    color:white;
+    text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
+    text-align: center;
+    margin:0;}
+    
+    nav { /*the nav element has been given color, sizes of text, width and height and line-height as well how it should be displayed.*/
+        background-color: #B4BBDF;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+        font-weight: bold;
+        font-size: 1em;
+        position: absolute;
+        top:0;
+        right:0;
+        height: 700px;
+        width: 300px;
+        display: none;
+        line-height: 1.8;}
+    
+        nav ul {/*The nav element's unsorted list has been styled in sizes, placement, margin and padding, line-height.*/
+            width: 100%;
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+            padding:0;
+            font-weight: bold;
+            font-size: 1.5em;
+            line-height: 1.5;}
+    
+     nav li {/*The nav element's object has been sized and padded.*/
+            padding: 0.8em 0;
+            width: 100%;}
+    
+            nav a { border-radius:15px;
+                background-color: #D3E6FE;
+                color:black;
+                font-weight: 500;
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+                text-decoration: none;
+                padding:10px;}
+    
+        nav a:active {background-color: white;}
+    
+        .menu a { border-radius:15px;
+            background-color: #D3E6FE;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
+        
+        a:hover {/*nav element links hover, get background color and a "pointing finger".*/
+            background-color: rgb(83, 135, 191);
+            cursor: pointer;}
+    
+        .menu-btn.open {/*the menu button gets placement, padding, background color, frame, a "pointing finger" and sizes.*/
+            display: flex;
+            align-items:center;
+            padding: 6px 15px;
+            background-color:#D3E6FE;
+            border: black solid 1px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);
+            cursor: pointer;
+            width:120px;
+            height:60px;
+            margin: 0 2em;}
+    
+        .menu-btn:hover {/*menu button on hover gets background color and shadow.*/
+            background-color:rgb(83, 135, 191);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
+        
+        .menu-icon {margin-right: 8px;}/*the menu icon gets the right margin.*/
+        
+        .bars {/*The lines in the menu get design, size, background color and margin.*/
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color:black;
+            margin: 5px 0;
+            align-items: center;}
+        
+        .menu-text {/*the menu text has been given size, design, line height and color.*/
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 1.5;
+            color: black;}
+    
+        .close {/*the button to close has been given margin, padding and backgroundcolor.*/ 
+            margin: 1em 1.5em;
+            padding: 10px 15px;
+            background-color: #D3E6FE;
+            text-align: center;}
+        
+        .cross1 {/*the cross on the close button gets size, design, position and placement.*/
+            width: 25px;
+            transform: rotate(45deg);
+            position: relative;
+            top: 5px;}
+        
+        .cross2 {/*the cross on the close button gets size, design, position and placement.*/
+            width: 25px;
+            transform: rotate(135deg);
+            position: relative;
+            top: -3px;}
+    
