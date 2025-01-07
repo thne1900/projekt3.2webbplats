@@ -144,4 +144,77 @@ body {background-color:#FFFCFB;
             transform: rotate(135deg);
             position: relative;
             top: -3px;}
+
+            .grid-container {/*A grid container with rows and columns and gaps in between.*/
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns:repeat(3, 1fr);
+                grid-column-gap: 2%;}
+
+            .booking {grid-row-start: 1;
+                grid-column-start: 1;
+                grid-row-end: 2;
+                grid-column-end: 3;
+            }
+            h2 {text-align: center;}
+
+            form {text-align: center;
+                font-size: 1.2em;
+                line-height: 1.6;
+                background-color: #B4BBDF;
+                box-sizing: border-box;
+            border-radius: 15px;
+            padding-top:2%;
+            padding-bottom: 2%;
+        margin-left: 25%;
+    margin-right: 25%;
+margin-top:8%;
+margin-bottom: 8%;}
+
+input {
+padding:1%;
+border:1px solid #ccc;
+border-radius: 5px;
+}
+#adress {padding:1%;}
+#date {font-size: 1em; font-weight: bold;}
+#time {font-size:1em; font-weight: bold;}
+#interval {
+font-size: 1em;
+background-color: white;
+border:1px solid #ccc;
+border-radius: 5px;}
+#else {padding:1%;}
+
+button {background-color: white;
+font-size: 1.2em;}
+
+.footer {grid-area: 3/1/4/4;}
+
+footer {
+    font-size: 1em;
+    background-color: #B4BBDF;
+    padding:1%;
+    text-align: center;}
+
+/*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
+@media only screen and (min-width: 1024px){
+    .menu-btn {display: none;}
+
+    #open-menu {display: none !important;}
+
+    header {position: static;}
+
+    nav {display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 20px;
+        width: auto;}
+
+    nav ul { height: 100%;}
+
+    nav li {display: inline;
+        padding: 1.2em 0;}
+}
     
