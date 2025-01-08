@@ -4,7 +4,7 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
     <title>Färdtjänstbokning</title>
-    <link rel="stylesheet" type="text/css" href="CSS/mypages.css"><!--css file-->
+    <link rel="stylesheet" type="text/css" href="CSS/cancel.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
     <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
     <style>
@@ -64,93 +64,15 @@
     <figure class="header-pic">
         <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
     <section class="overlay-text">
-        <h1>Mina sidor:</h1>
+        <h1>Avboka resa:</h1>
     </section>
 </figure>
 
 
 <div class="grid-container">
 
-<section class="personalinfo">
-<h2>Mina uppgifter: <i class="fa-solid fa-address-card"></i></h2>
-<p><b>Förnamn:</b> Birgitta</p>
-<p><b>Efternamn:</b> Andersson</p>
-<p><b>Personnummer:</b> 19491115-xxxx</p>
-<p><b>Hemadress:</b> Stigvägen 15, 442 46 Kareby.</p>
-<p><b>Telefonnummer:</b> xxxx-371630</p>
-<p><b>Mailadress:</b> biggan49@hotmail.com</p>
-<br>
-<h3>Tillval: <i class="fa-solid fa-plus"></i></h3>
-<p><b>Hjälpmedel:</b> Rullstol</p>
-<p><b>Ledsagare:</b> Nej</p>
-<p><b>Övrigt:</b> Behöver hjälp med in-och utrullning i rullstolen.</p>
-<br>
-<h3>Sparade adresser: <i class="fa-solid fa-pen"></i></h3>
-<p><b>-Kungälvs Sjukhus:</b>
-Lasarettgatan 1, 442 34 Kungälv</p>
-<p><b>-Väninna:</b>
-Snäckvägen 24, 442 65 Koön</p>
-</section>
-
-<button class="booking" id="click.button" type="submit"><i class="fa-solid fa-circle-check"></i> Boka resa</button>
-<script>
-    document.getElementById("click.button").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
-        window.location.href="booking.html";
-    });
-    </script>
-
-<button class="canceled" id="click.button1" type="submit"><i class="fa-solid fa-xmark"></i> Avboka resa</button>
-<script>
-    document.getElementById("click.button1").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
-        window.location.href="cancel.html";
-    });
-    </script>
-
- <button class="logout" id="click.logout" type="submit">Logga ut</button>
- <script>
-     document.getElementById("click.logout").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
-         window.location.href="index.html";
-     });
-     </script>
-
-
-<section class="card">
-    <h3 id="title.card"><b>Färdtjänstkort:</b></h3>
-    <br>
-    <i class="fa-solid fa-camera"></i> <p class="cardtext">Lägg till bild</p>
-    <br>
-    <p><b>Färdtjänsttillståndet gäller:</b>
-        <br>
-    Birgitta Andersson
-    1949-11-15</p>
-    <p><b>Område:</b>
-    Kungälvs Kommun</p>
-    <p><b>KundID:</b>
-    100350590</p>
-    <p><b>Giltligt tom:</b>
-    Tillsvidare</p>
-    </section>
+    <footer class="footer">
+        <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+        © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
+        </footer>
     
-<section class="bookingtrips">
-<h3><b>Mina bokade resor: <i class="fa-solid fa-circle-check"></i></b></h3>
-<p><b>2024-12-15: #432418716</b></p>
-<p><b>Avresa:</b> Kl: 08:45</p>
-<p><b>Återresa:</b> Kl:13:00</p>
-<br>
-<button class="change" id="click.change" type="submit"><i class="fa-solid fa-arrow-right-arrow-left"></i> Ändra bokning</button>
-<script>
-    document.getElementById("click.change").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
-        window.location.href="booking.html";
-    });
-    </script>
-</section>
-
-    <footer class="object4">
-    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
-    </footer>
-
-
-    </div>
-</body>
-</html>

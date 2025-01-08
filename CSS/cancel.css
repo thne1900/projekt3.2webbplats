@@ -36,6 +36,19 @@ body {background-color:#FFFCFB;
     .header-pic {/*margin-top: 4%;*/
                 text-align: center;}
     
+    .overlay-text {
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;}
+    
+    h1 {font-size: 2.5em;
+    font-weight: bold;
+    color:white;
+    text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
+    text-align: center;
+    margin:0;}
     
     nav { /*the nav element has been given color, sizes of text, width and height and line-height as well how it should be displayed.*/
         background-color: #B4BBDF;
@@ -135,68 +148,33 @@ body {background-color:#FFFCFB;
             .grid-container {/*A grid container with rows and columns and gaps in between.*/
                 display: grid;
                 grid-template-rows: auto;
-                grid-template-columns:repeat(1fr 2fr 1fr);
+                grid-template-columns:repeat(3, 1fr);
+                grid-column-gap: 2%;}
+
+                footer {
+                    font-size: 1em;
+                    background-color: #B4BBDF;
+                    padding:1%;
+                    text-align: center;}
+                
+                /*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
+                @media only screen and (min-width: 1024px){
+                    .menu-btn {display: none;}
+                
+                    #open-menu {display: none !important;}
+                
+                    header {position: static;}
+                
+                    nav {display: block !important;
+                        position: static;
+                        box-shadow: 0 0px 0px;
+                        height: auto;
+                        font-size: 20px;
+                        width: auto;}
+                
+                    nav ul { height: 100%;}
+                
+                    nav li {display: inline;
+                        padding: 1.2em 0;}
                 }
-
-            h1 {font-size:2em; text-align: center; margin-bottom: 0;}
-            h2{font-size: 1.6em; text-align: center; margin-top: 0;}
-
-                .booking-confirmation {grid-row-start: 1;
-                    grid-column-start: 2;
-                    grid-row-end: 1;
-                    grid-column-end: 2;
-                    margin-left:20%;
-                    margin-right: 20%;
                     
-                    border: 4px solid black;
-                background-color: white;
-                padding-left:5%;
-                padding-right: 5%;
-                padding-top: 2%;
-                padding-bottom: 2%;
-    margin-bottom: 8%;
-margin-top: 4%;}
-
-        section p {font-size: 1.1em;
-        line-height: 1;}
-
-        .textobject1 {font-size:1.2em;
-        font-style: italic;
-    line-height: 1.5;
-text-align: center;}
-    .textobject2 {font-size: 1.2em;
-    font-weight: bold;
-text-align: center;}
-.footer {grid-area:2/1/3/4;}
-footer {
-    font-size: 1em;
-    background-color: #B4BBDF;
-    padding:1%;
-    text-align: center;}
-
-
-    /*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
-@media only screen and (min-width: 1024px){
-    .menu-btn {display: none;}
-
-    #open-menu {display: none !important;}
-
-    header {position: static;}
-
-    nav {display: block !important;
-        position: static;
-        box-shadow: 0 0px 0px;
-        height: auto;
-        font-size: 20px;
-        width: auto;}
-
-    nav ul { height: 100%;}
-
-    nav li {display: inline;
-        padding: 1.2em 0;}
-}
-
-@media (max-width:1024px) and (min-width:600px) {
-h1 {font-size: 1.6em;}
-
-}
