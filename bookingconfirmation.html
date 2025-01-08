@@ -4,7 +4,7 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
     <title>Färdtjänstbokning</title>
-    <link rel="stylesheet" type="text/css" href="CSS/booking.css"><!--css file-->
+    <link rel="stylesheet" type="text/css" href="CSS/bookingconfirmation.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
     <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
     <style>
@@ -69,69 +69,3 @@
 </figure>
 
 <div class="grid-container"></div>
-
-    <form class="booking">
-    <h2><b>Färdtjänstbokning:</b></h2>
-    <label for="adress">Till:</label>
-    <input type="text" name="adress" id="adress" value="Lilla Varvsgatan 2B" />
-    <br>
-    <br>
-    <label for="date">Datum:</label>
-        <input type="date" id="date" name="bookingdate">
-<br>
-<br>
-<label for="time">Tid:</label>
-<input type="time" name="time" id="time" />
-<label>Snarast: <input type="checkbox" id="ja" name="answer" value="ja">JA</label>
-<br>
-<br>
-<label>Återkommande resa: <input type="radio" name="answer" value="ja">JA</label>
-<label><input type="radio" name="answer" value="nej" checked>NEJ</label>
-<label for="select"><br>
-    Intervall:</label>
-    <br>
-    <select name="interval" id="interval">
-    <option> Välj intervall här! </option>
-    <option value="monday"> Varje måndag </option>
-    <option value="tuesday"> Varje tisdag </option>
-    <option value="wednesday"> Varje onsdag </option>
-    <option value="thursday">Varje torsdag </option>
-    <option value="friday"> Varje fredag </option>
-    <option value="saturday"> Varje lördag </option>
-    <option value="sunday">Varje söndag </option>
-    </select>
-<br>
-<br>
-<label for="trip-return">
-    <input type="checkbox" id="trip-return" name="trip-return"> Boka retur-resa</label>
-    <br><button class="book-here" id="book-here" type="submit">Boka här</button>
-    <h3><b>Tillval:</b></h3>
-    <label>Assistansbehov: Ledsagare <input type="radio" name="yes/no" value="yes">JA</label>
-<label><input type="radio" name="yes/no" value="no" checked>NEJ</label>
-<br>
-<label>Anpassat fordon för rullstol: <input type="radio" name="no/yes" value="ja" checked>JA</label>
-<label><input type="radio" name="no/yes" value="nej">NEJ</label>
-<br>
-<br>
-<label for="else">Övrig information:</label>
-<input type="text" id="else" value="Hjälp in i fordonet." />
-<br>
-<br>
-<button class="confirm" id="click.confirm" type="submit"><i class="fa-solid fa-arrow-pointer"></i> Bekräfta bokning</button>
-<script>
-    document.getElementById("click.confirm").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
-        window.location.href="bookingconfirmation.html";
-    });
-    </script>
-</form>
-    <footer class="footer">
-        <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-        © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
-        </footer>
-    
-
-
-
-    </div>
-    </body>
-    </html>

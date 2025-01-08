@@ -165,7 +165,7 @@ body {background-color:#FFFCFB;
                 box-sizing: border-box;
             border-radius: 15px;
             padding-top:2%;
-            padding-bottom: 2%;
+            padding-bottom: 4%;
         margin-left: 25%;
     margin-right: 25%;
 margin-top:8%;
@@ -176,18 +176,34 @@ padding:1%;
 border:1px solid #ccc;
 border-radius: 5px;
 }
-#adress {padding:1%;}
-#date {font-size: 1em; font-weight: bold;}
-#time {font-size:1em; font-weight: bold;}
+#adress {padding:1.5%; width:25%; height:auto;font-size: 0.9em;}
+#date {font-size: 1em; font-weight: bold; width:25%; height:auto;}
+#time {font-size:1em; font-weight: bold; width:15%; height:auto;}
 #interval {
 font-size: 1em;
 background-color: white;
 border:1px solid #ccc;
 border-radius: 5px;}
-#else {padding:1%;}
+#else {padding:1.5%; width:25%; height:auto; font-size: 0.9em;}
 
-button {background-color: white;
-font-size: 1.2em;}
+.book-here {background-color: white;
+    padding: 1%;
+font-size: 1.2em;
+border-radius: 15px;
+border:none;
+box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
+
+.confirm {background-color: #53D76C;
+    padding:3%;
+font-size: 1.3em;
+border-radius: 15px;
+border:none;
+box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
+
+.confirm:hover { background-color: rgb(83, 135, 191);
+    cursor: pointer;}
+
+.book-here {cursor: pointer;}
 
 .footer {grid-area: 3/1/4/4;}
 
