@@ -151,6 +151,29 @@ body {background-color:#FFFCFB;
                 grid-template-columns:repeat(3, 1fr);
                 grid-column-gap: 2%;}
 
+                .cancel {grid-row-start: 1;
+                    grid-column-start: 2;
+                    grid-row-end: 2;
+                    grid-column-end: 2;
+                border: 35px solid #B4BBDF;
+            border-radius: 15px;
+        background-color: white;
+    padding:4%;
+margin-bottom: 8%;
+text-align: center;
+max-width: 100%;
+height: auto;}
+
+ button.cancel {font-size: 1.2em;
+    background-color: #FED3D3;
+font-weight: bold;
+max-width: 300px;
+height: auto;}
+
+
+
+                    .footer {grid-area:3/1/4/4;}
+
                 footer {
                     font-size: 1em;
                     background-color: #B4BBDF;
@@ -177,4 +200,18 @@ body {background-color:#FFFCFB;
                     nav li {display: inline;
                         padding: 1.2em 0;}
                 }
-                    
+                @media (max-width:1024px) and (min-width:600px) {
+
+                    h1{font-size: 2em;}
+                    h2{font-size: 1.5em;}
+                    .cancel {width:80%;font-size: 1em;border-radius: 0;}
+                    section p {font-size: 1.3em;}
+                    button.cancel {border-radius: 0;}
+                }
+                @media (max-width:600px) {
+                    .cancel {grid-area:1/1/2/4;
+                    margin-left: 4%;
+                margin-right:4%;}
+
+                footer {font-size: 0.7em;}
+                }

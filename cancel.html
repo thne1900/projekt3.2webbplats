@@ -71,8 +71,25 @@
 
 <div class="grid-container">
 
+<section class="cancel">
+<h2>Mina bokade resor:</h2>
+<h3>1.</h3>
+<p><strong>Bokningsnummer:</strong>#432418716</p>
+<button class="cancel" id="click.cancel" type="submit"><i class="fa-solid fa-xmark"></i> Avboka resa</button>
+<script>
+    document.getElementById("click.cancel").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
+        window.location.href="cancelconfirmation.html";
+    });
+    </script>
+
+</section>
+
+
+
     <footer class="footer">
         <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
         © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
         </footer>
-    
+    </div>
+    </body>
+    </html>
