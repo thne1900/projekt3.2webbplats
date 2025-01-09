@@ -5,4 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
     <title>Färdtjänstbokning</title>
     <link rel="stylesheet" type="text/css" href="CSS/about.css"><!--css file-->
+    <link rel="icon" type="image/ico"  href="bilder/bil.ico">
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
 </head>
+<body>
+<header>
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
+        <div class="menu.resp"><!--Class containing menu navigation-->
+            <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
+               <span class="menu-icon"><!--designing the appearance of the menu-->
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+               </span>
+               <span class="menu-text">MENY</span><!--text visible for menu-->
+           </button>
+           <nav id="nav-menu"><!--navigation menu-->
+               <button class="menu-btn close" id="close-menu"><!--Button to close the menu-->
+                   <span class="menu-icon">
+                       <span class="bars cross1"></span>
+                       <span class="bars cross2"></span>
+                   </span>
+                   <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
+               </button>
+
+<ul class="menu">
+    <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
+    <li><a href="cancel.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
+    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
+    <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
+    </ul>
+    </nav>
+    <script>//javascript for functions for menu navigation.
+        //Variables to access the respective id:
+           let openButton = document.getElementById("open-menu");
+           let closeButton = document.getElementById("close-menu");
+           //added event listeners on the elements
+           openButton.addEventListener('click', toggleMenu);
+           closeButton.addEventListener('click', toggleMenu);
+           //Function that tells what the menu should do when it is hidden or visible.
+           function toggleMenu() {
+               let navMenuElement = document.getElementById("nav-menu");
+               let style = window.getComputedStyle(navMenuElement);
+               if(style.display === "none") {
+                   navMenuElement.style.display = "block";
+               } else {
+                   navMenuElement.style.display = "none";
+               }
+           }
+       </script>
+       </div>
+    </header>
+    <figure class="header-pic">
+        <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
+    <section class="overlay-text">
+        <h1>Om färdtjänst:</h1>
+    </section>
+</figure>
+
+<div class="grid-container">
+
+<section class="about">
+    <h2><strong>Vad innebär det att resa med färdtjänst? </strong></h2>
+    <p>För dig som går under lagen (1997:735) om färdtjänst, 
+    med någon form av funktionsvariation, som gör att du inte kan på egen hand förflytta dig eller ta dig fram med kollektivtrafiken. 
+    Denna webbplats riktar sig till de personer som är bosatta inom Kungälvs kommun. 
+    Som är i behov att kunna boka en färdtjänstresa för sina vardagssituationer, som tex ett sjukhusbesök. 
+    Ett mindre fordon används vid dessa resor.</p>
+
+    <h3><strong>Du som har rätt till färdtjänst ska uppfylla vissa krav:</strong></h3>
+    <p>-Svårigheter i hög grad att på egenhand kunna förflytta dig.</p>
+    <p>-Inte kunna använda kollektivtrafiken (ex buss eller tåg) pga. av din funktionsvariation.</p>
+    <p>-Bosatt och skriven i Kungälvs kommun, det är via kommunen som ansökan görs kring färdtjänst.</p>
+    <p>-Din funktionsvariation är bedömd till att vara bestående minst tre månader.</p>
+    
+    <h3><strong>Färdtjänsttillstånd:</strong></h3>
+    <p>Utfärdas då kraven uppfylls och innehåller den tid du är beviljad att få rätt till färdtjänst. 
+    Det kan också finnas förskrivet speciella regler för ditt innehav, 
+    som att resorna enbart får utföras inom ett begränsat område eller ett limiterat antal resor som kan nyttjas. 
+    Du får då ett personligt färdtjänstkort. 
+    Samåkning kan ske med andra resenärer.</p>
+    
+    <h3><strong>Ansökan:</strong></h3>
+    <p>En ansökan om färdtjänst görs genom att skicka in ansökningsblanketten till Kungälvs kommun via post eller email. 
+    Ett läkarutlåtande behöver bifogas med blanketten.</p>
+</section>
+
+<aside class="price">
+<h3><strong><i class="fa-solid fa-dollar-sign"></i> Prislista:</strong></h3>
+<p><strong>För vuxna:</strong></p>
+<p>*Inom Kungälvs Kommun: 78 kr</p>
+<p>*Mellan Kungälv-Ale: 94 kr</p>
+<p>*Mellan Kungälv- Göteborg: 157 kr</p>
+<p><strong>Nattaxa:</strong> Gäller resor mellan: 00:00-04:00 : 50% tillägg.</p>
+<br>
+<p><strong>För ungdom:</strong>(från 7-20 år)</p>
+<p>*Inom Kungälvs Kommun: 59 kr</p>
+<p>*Mellan Kungälv-Ale: 71 kr</p>
+<p>*Mellan Kungälv-Göteborg 118 kr</p>
+<p><strong>Nattaxa:</strong> Gäller resor mellan: 00:00-04:00 : 50% tillägg.</p>
+<i class="fa-solid fa-car"></i>
+</aside>
+
+
+<footer class="footer">
+    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
+    </footer>
+</div>
+</body>
+</html>

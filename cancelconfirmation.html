@@ -4,5 +4,80 @@
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
     <title>Färdtjänstbokning</title>
-    <link rel="stylesheet" type="text/css" href="CSS/canceledrecived.css"><!--css file-->
+    <link rel="stylesheet" type="text/css" href="CSS/cancelconfirmation.css"><!--css file-->
+    <link rel="icon" type="image/ico"  href="bilder/bil.ico">
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+        <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
 </head>
+<body>
+<header>
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
+        <div class="menu.resp"><!--Class containing menu navigation-->
+            <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
+               <span class="menu-icon"><!--designing the appearance of the menu-->
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+                   <span class="bars"></span>
+               </span>
+               <span class="menu-text">MENY</span><!--text visible for menu-->
+           </button>
+           <nav id="nav-menu"><!--navigation menu-->
+               <button class="menu-btn close" id="close-menu"><!--Button to close the menu-->
+                   <span class="menu-icon">
+                       <span class="bars cross1"></span>
+                       <span class="bars cross2"></span>
+                   </span>
+                   <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
+               </button>
+
+<ul class="menu">
+    <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
+    <li><a href="cancel.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
+    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
+    <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
+    </ul>
+    </nav>
+    <script>//javascript for functions for menu navigation.
+        //Variables to access the respective id:
+           let openButton = document.getElementById("open-menu");
+           let closeButton = document.getElementById("close-menu");
+           //added event listeners on the elements
+           openButton.addEventListener('click', toggleMenu);
+           closeButton.addEventListener('click', toggleMenu);
+           //Function that tells what the menu should do when it is hidden or visible.
+           function toggleMenu() {
+               let navMenuElement = document.getElementById("nav-menu");
+               let style = window.getComputedStyle(navMenuElement);
+               if(style.display === "none") {
+                   navMenuElement.style.display = "block";
+               } else {
+                   navMenuElement.style.display = "none";
+               }
+           }
+       </script>
+       </div>
+    </header>
+    <figure class="header-pic">
+        <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
+</figure>
+
+<div class="grid-container">
+
+<section class="cancelconfirmation">
+    <h1><strong><i class="fa-solid fa-xmark"></i> Avbokningsbekräftelse:</strong></h1>
+    <p>Din bokning med bokningsnummer: <strong>#432418716</strong></p>
+    <p>Har nu registrerats som <strong>AVBOKAD.</strong></p>
+    <p>För att göra en ny bokning, välj <em>"Boka resa"</em> på MENYN eller boka via <em>"Mina sidor</em></p>
+</section>
+
+<footer class="footer">
+    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
+    </footer>
+</div>
+</body>
+</html>
