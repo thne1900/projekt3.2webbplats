@@ -151,6 +151,32 @@ body {background-color:#FFFCFB;
                 grid-template-columns:repeat(2, 1fr);
                 grid-column-gap: 2%;}
 
+        .text {grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 3;
+            margin-left:20%;
+            margin-right:20%;
+            margin-bottom: 8%;
+            margin-top:4%;
+            text-align: left;
+        border: 4px solid black;
+    padding-left:4%;
+padding-right:4%;
+padding-bottom: 4%;}
+
+h2 {margin-bottom:0;}
+h3{margin-bottom:0;}
+h4{margin-bottom: 0;}
+section p{margin-top:5px; line-height: 1.6em; font-size: 1.2em;}
+
+            .footer {grid-area:3/1/4/3;}
+
+            footer {
+                font-size: 1em;
+                background-color: #B4BBDF;
+                padding:1%;
+                text-align: center;}
 
 
 
