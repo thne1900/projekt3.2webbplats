@@ -1,30 +1,40 @@
+/*The body has been given background color, inserted font, text color, 
+text size, height, height, width and placement in the middle.*/
 body {background-color:#FFFCFB;
     font-family: "inter", sans-serif;
     color:black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
     max-width: 1512px;
     height: auto;
     margin-left: auto;
     margin-right: auto;}
 
+/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
-    margin-left:1%;
-    top:2%;
+    margin-left:auto;
+    margin-left:auto;
+    top:10%;
     border-radius: 15px;
-    width:8%;
+    width:10%;
     height:auto;}
 
-nav{max-width:1512px;
-        height:auto;
-        margin:0 auto;}
+/*The mobile device logo has been hidden.*/
+#car {display: none;}
 
-nav li{
-    font-size:1.6em;
+/*Navigation has been given height, width and margin.*/
+nav {max-width:1512px;
+    height:auto;
+    margin:0 auto;}
+
+/*The li elements have been given text size, margin and how they should appear on the page.*/
+nav li {font-size:1.6em;
     display: inline-block;
     margin: 0 25px;}
 
-nav a { border-radius:15px;
+/* a element for linking to other pages has received rounded edges, background color, 
+text color, bold style, shading, no decoration and padding.*/
+nav a {border-radius:15px;
     background-color: #D3E6FE;
     color:black;
     font-weight: 500;
@@ -32,14 +42,15 @@ nav a { border-radius:15px;
     text-decoration: none;
     padding:10px;}
 
-a:hover {/*nav element links hover, get background color and a "pointing finger".*/
-        background-color: rgb(83, 135, 191);
+/*a the elements when hovering have been given a background color and a "pointing finger".*/   
+a:hover {background-color: rgb(83, 135, 191);
         cursor: pointer;}
 
+/*The navigation's unsorted list has no displayed items*/   
 nav ul {list-style-type: none;}
 
-header {/*the header element has been given color, sizes, placement, margin and padding.*/
-        background-color:#B4BBDF;
+/*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
+header {background-color:#B4BBDF;
         max-width: 1512px;
         height: 100px;
         box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
@@ -50,46 +61,49 @@ header {/*the header element has been given color, sizes, placement, margin and 
         justify-content: space-between;
         align-items: center;}  
         
-#header-pic{
-        width:100%;
+/*The header image has been given width, height and coverage.*/
+#header-pic {width:100%;
         height:auto;
         object-fit: cover;}
     
-.header-pic {/*margin-top: 4%;*/
-        text-align: center;}
+/*The image's alt text has been centered.*/
+.header-pic {text-align: center;}
     
-.overlay-text {
-    position:absolute;
+/*The headings on the header image have been given position, placement and padding.*/
+.overlay-text {position:absolute;
     top:30%;
     left:50%;
     transform: translate(-50%,-50%);
     padding: 10px;}
     
+/*The main heading (h1) has been given text size, text color, shading, centered text and margin.*/
 h1 {font-size: 2em;
-    font-weight: bold;
     color:white;
     text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
     text-align: center;
     margin-bottom:0.5%;
-    z-index: 1;}
+    /*z-index: 1;*/}
 
+/*The subheading (h2) has been given text size, color, margin, centered text and shading.*/
 h2 {font-size: 1.8em;
 color:white;
-font-weight: bold;
 margin-top: 0.5%;
 text-align: center;
 margin-bottom: 4%;
 text-shadow: 4px 4px 6px rgb(0,0,0,0.5);}
 
+/*The subheading (h3) has been given a bold style and centered text.*/
 h3 {font-weight: 500;
 text-align: center;}
 
-.grid-container {/*A grid container with rows and columns and gaps in between.*/
-    display: grid;
+/*A grid container with rows, columns and gaps in between.*/
+.grid-container {display: grid;
     grid-template-rows: auto;
     grid-template-columns:repeat(3, 1fr);
     grid-column-gap: auto;}
 
+/*The login section has been placed in a grid container and given padding, width, 
+height, background color, rounded edges and margin.*/
 .login {grid-row-start: 1;
     grid-column-start: 2;
     grid-row-end: 2;
@@ -101,56 +115,94 @@ text-align: center;}
     border-radius:15px;
     margin-bottom: 25px;}
 
-label {font-size:1.3em;}
-
-button {padding:4%;
-    margin-top:4%;
-    color:black;
+/*The buttons have been given a background color, size, bold style, rounded edges, padding, shading and margin.*/
+section button {color:black;
     font-size: 1.4em;
     font-weight: bold;
     background-color: white;
-    padding:1%;
     border-radius: 15px;
-    border: none;padding-left: 5%;padding-right: 5%; padding-bottom: 2%;padding-top: 2%;
+    border: none;
+    padding-left: 5%;
+    padding-right: 5%; 
+    padding-bottom: 2%;
+    padding-top: 2%;
     box-shadow:0px 2px 2px 0px rgba(0,0,0,1);
-    margin-left: 33%;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+    margin-left:30%;
+    margin-top:4%;}
 
+/*When hovering over buttons, the background color becomes blue.*/
+button:hover {background-color: rgb(83, 135, 191);}
+
+/*the element label in the form has been given text size and bold style.*/
+form label {font-size: 1.2em; font-weight: 500;}
+
+/*The input elements have received padding and a rounded colored edge.*/
+form input {padding:2%;
+    border:1px solid #ccc;
+    border-radius: 5px;}
+
+/*The text has been given text size, bold style and line height.*/
 .logintext {font-size: 1em;
     font-weight: 600;
     line-height: 1.6;}
 
-.footer {grid-area:2/1/3/4;}
+/*The section has been placed with grid area, padding, width, height background color, rounded edges and margin.*/
+.new {grid-area:3/2/4/2;
+    padding:4%;
+    max-width:100%;
+    height:auto;
+    background-color:#B4BBDF;
+    border-radius:15px;
+    margin-bottom: 8%;}
 
-footer {
-    font-size: 1em;
+/*The text in section has been given text size, centered placement and bold style.*/
+.new p {font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;}
+
+/*Footer has been placed with a grid area.*/
+.footer {grid-area:4/1/5/4;}
+
+/*The content in the footer has been given text size, background color, padding, centered text and margin.*/
+footer {font-size: 1em;
     background-color: #B4BBDF;
     padding:1%;
     text-align: center;
     margin-bottom:0;}
 
-    @media (max-width:1024px) and (min-width:600px){
+/*Media rule for break point at 1024px to 600px: Headings got different sizes and placement. 
+Sections, the form, text and buttons have been given a different location and appearance.*/
+@media (max-width:1024px) and (min-width:600px){
         nav li {font-size: 1.4em; margin: 0 10px;}
         h1{font-size:1.8em;}
         h2{font-size:1.5em;}
         h3 {font-size: 1.3em;}
-        .login {grid-area:1/1/2/4;
-        margin-left:5%;
-        margin-right:5%;}
-        label {padding-left: 33%;}
-        button {margin-left: 40%;}
+        .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
+        form label {padding-left: 25%;}
+        section button {margin-left: 33%;}
         .logintext {margin-left: 25%; margin-right: 25%;}
+        .new {grid-area:3/1/4/4; margin-left:15%; margin-right:15%; max-width:100%; height:auto;}
     }
-    @media (max-width:600px) {
-nav a{border-radius:0;}
-nav li {font-size: 1.2em; margin: 0 5px;}
-h1 {font-size: 1.4em; margin-top: 0;}
-h2 {display: none;}
-h3 {font-size: 1.2em;}
-.logintext {display: none;}
-label{font-size: 1.1em;}
-.login {border-radius:0; grid-area:1/1/2/4; margin-left: 4%; margin-right: 4%;}
-.footer {grid-area:2/1/3/4;}
-footer {font-size:0.7em;}
+
+/*Media rule for breakpoint at 600px: The logo changes appearance, edges are sharpened, 
+text sizes change, some elements become hidden and some elements get different positions.*/
+@media (max-width:600px) {
+    #logo {display: none;}
+    #car {display:block;position:absolute;top:27.5%;margin-left:1%;width:12%;height:auto;}
+    nav a{border-radius:0;}
+    nav li {font-size: 1em; margin: 0 5px;}
+    h1 {font-size: 1.2em;}
+    .overlay-text {top:22%; left:50%;}
+    h2 {display: none;}
+    h3 {font-size: 1.2em;}
+    .logintext {display: none;}
+    form label{font-size: 1.1em;}
+    .login {border-radius:0; grid-area:1/1/2/4; margin-left: 4%; margin-right: 4%;}
+    .new {grid-area: 3/1/4/4; margin-left:4%; margin-right:4%; border-radius:0;}
+    .new p { font-size: 1em;}
+    section button{font-size: 1.2em; margin-left: 31%;} 
+    .footer {grid-area:5/1/6/4;}
+    footer {font-size:0.7em;}
 }
     

@@ -3,25 +3,28 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <title>Färdtjänstbokning</title>
+    <title>Färdtjänstbokning</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/index.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
-    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
-    <style>
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png"><!--website favicon-->
+    <style>/*Downloaded fonts from google fonts.*/
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
         <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--The header containing the logo and the navigation menu.-->
     <header>
-    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bil med text"></a><!--Logo for desktop and tablet-->
+    <a href="mypages.html"><img src="bilder/bil.png" id="car" alt="Svart bil"></a><!--Logo for mobile phone-->
     <nav><!--navigation menu-->
-    <ul>
+    <ul><!--An unsorted list of the menu choices, with inset icon from font awsome.-->
     <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
     <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
     </ul>
     </nav>
 </header>
+<!--Figure element containing the header image and main heading-->
     <figure class="header-pic">
         <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
     <section class="overlay-text">
@@ -29,18 +32,21 @@
         <h2>-Boka din resa hos oss</h2>
     </section>
 </figure>
-
+<!--Div element for a grid container for the element's locations.-->
 <div class="grid-container">
+<!--section element to contain header and form.-->
 <section class="login">
 <h3>Användare: <i class="fa-solid fa-user"></i></h3>
-<form>
+<form><!--Form to log in with username and password-->
 <label for="username">Användarnamn:</label>
-<input type="text" name="username" id="username">
+<input type="text" name="username" id="username" placeholder="Användarnamn">
+<br>
 <br>
 <label for="password">Lösenord:</label>
-<input type="password" name="password" id="password">
+<input type="password" name="password" id="password" placeholder="Lösenord">
 </form>
 <br>
+<!--Button to log in to "Mina sidor".-->
 <button id="click.login" type="submit">Logga in</button>
 <script>
     document.getElementById("click.login").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
@@ -50,11 +56,22 @@
 <p class="logintext">Denna tjänst riktar sig till dig som har ett beviljat färdtjänsttillstånd. 
     På webbplatsen kan du boka, avboka och ändra dina resor.</p>
 </section>
-
+<!--section element for text and a button-->
+<section class="new">
+<p class="newtext">Ny användare eller vill veta mer?</p>
+<!--Button to "Kontakta oss".-->
+<button id="click.contact" type="submit">Kontakta oss</button>
+<script>
+    document.getElementById("click.contact").addEventListener("click", function(){ //code that reaches the button, sets an event listener, when clicked, takes a visitor to the school's page.
+        window.location.href="contact.html";
+    });
+    </script>
+</section>
+<!--Footer element with contact details and availability statement.-->
 <footer class="footer">
-    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
-    </footer>
+    <p><strong>Kontaktuppgifter:</strong>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+            © Copyright 2024•Kungälvs kommun Färdtjänstresor. <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+</footer>
 </div>
 </body>
 </html>
