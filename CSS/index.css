@@ -108,7 +108,7 @@ height, background color, rounded edges and margin.*/
     grid-column-start: 2;
     grid-row-end: 2;
     grid-column-end: 2;
-    padding:4%;
+    padding:8%;
     max-width:100%;
     height:auto;
     background-color:#B4BBDF;
@@ -127,9 +127,15 @@ section button {color:black;
     padding-bottom: 2%;
     padding-top: 2%;
     box-shadow:0px 2px 2px 0px rgba(0,0,0,1);
-    margin-bottom: 20px;
-    margin-left:30%;
-    margin-top:4%;}
+    margin-bottom: 20px;}
+
+/*The button click-login has been given margins.*/
+.click-login {margin-left:30%;
+        margin-top:4%;}
+
+/*The button click-login has been given margins.*/       
+.click-contact {margin-left: 28%;
+        margin-top: 4%;}
 
 /*When hovering over buttons, the background color becomes blue.*/
 button:hover {background-color: rgb(83, 135, 191);}
@@ -179,9 +185,10 @@ Sections, the form, text and buttons have been given a different location and ap
         h2{font-size:1.5em;}
         h3 {font-size: 1.3em;}
         .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
-        form label {padding-left: 25%;}
-        section button {margin-left: 33%;}
-        .logintext {margin-left: 25%; margin-right: 25%;}
+        form label {padding-left: 20%; font-size: 1.1em;}
+        form input {padding:1%;}
+        .click-login {margin-left: 33%;}
+        .logintext {margin-left: 20%; margin-right: 20%;}
         .new {grid-area:3/1/4/4; margin-left:15%; margin-right:15%; max-width:100%; height:auto;}
     }
 
@@ -189,19 +196,25 @@ Sections, the form, text and buttons have been given a different location and ap
 text sizes change, some elements become hidden and some elements get different positions.*/
 @media (max-width:600px) {
     #logo {display: none;}
-    #car {display:block;position:absolute;top:27.5%;margin-left:1%;width:12%;height:auto;}
+    #header-pic {max-width: 100%; height: auto;}
+    #car {display:block;position:absolute;top:33%;margin-left:1%;width:12%;height:auto;}
     nav a{border-radius:0;}
-    nav li {font-size: 1em; margin: 0 5px;}
-    h1 {font-size: 1.2em;}
-    .overlay-text {top:22%; left:50%;}
+    nav li {font-size: 0.8em; margin: 0; padding:0; display: inline;}
+    nav a{font-weight: bold;}
+    .fa-circle-info {font-size: 15px;}
+    .fa-envelope {font-size: 15px;}
+    h1 {font-size: 1em;}
+    .overlay-text {top:25%; left:50%;}
     h2 {display: none;}
-    h3 {font-size: 1.2em;}
+    h3 {font-size: 0.9em; font-weight: bold;}
     .logintext {display: none;}
-    form label{font-size: 1.1em;}
-    .login {border-radius:0; grid-area:1/1/2/4; margin-left: 4%; margin-right: 4%;}
+    form label{font-size: 0.9em;}
+    form input {padding:1%;}
+    .login {border-radius:0; grid-area:1/1/2/4; margin-left:4%; margin-right:4%;padding:8%;}
     .new {grid-area: 3/1/4/4; margin-left:4%; margin-right:4%; border-radius:0;}
     .new p { font-size: 1em;}
-    section button{font-size: 1.2em; margin-left: 31%;} 
+    .click-login{font-size: 1em; margin-left: 33%;}
+    .click-contact {margin-left: 30%;font-size: 1em;}
     .footer {grid-area:5/1/6/4;}
     footer {font-size:0.7em;}
 }
