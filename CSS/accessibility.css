@@ -151,78 +151,27 @@ body {background-color:#FFFCFB;
                 grid-template-columns:repeat(2, 1fr);
                 grid-column-gap: 2%;}
 
-                .intro {grid-row-start: 1;
-                    grid-column-start: 1;
-                    grid-row-end: 1;
-                    grid-column-end: 3;
-                    margin-left: 28%;
-                    margin-right: 28%;
-                font-size: 1.1em; 
-                line-height: 1.6; 
-                font-weight: bold;
-            text-align: center;}
-
-            .phone {grid-area:2/1/3/1;
-            margin-left: 25%;
-            margin-right: 25%;
-        background-color: #B4BBDF;
-    border-radius: 15px;
-margin-bottom: 4%;
-text-align: center;
-line-height: 1.3;}
-
-            .email {grid-area:3/1/4/1;
-            margin-left: 25%;
-            margin-right: 25%;
-        background-color: #B4BBDF;
-    border-radius: 15px;
-text-align: center;
-line-height: 1.3;
-margin-bottom: 8%;}
-
-.email a{font-size:0.9em;}
-
-            form {grid-area:2/2/4/2;
-        }
-
-        fieldset {background-color: #B4BBDF;
-        border-radius: 15px;
-        border:0;
-    padding:8%;
-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
-legend {font-size: 1.5em; text-align: center; font-weight: bold;}
-
-form label {font-size: 1.2em; font-weight: 500;}
-form input {padding:2%;
-    border:1px solid #ccc;
-    border-radius: 5px;}
-            .footer {grid-area:4/1/5/3;}
-
-
-                footer {
-                    font-size: 1em;
-                    background-color: #B4BBDF;
-                    padding:1%;
-                    text-align: center;}
 
 
 
-                @media only screen and (min-width: 1024px){
-                    .menu-btn {display: none;}
-                
-                    #open-menu {display: none !important;}
-                
-                    header {position: static;}
-                
-                    nav {display: block !important;
-                        position: static;
-                        box-shadow: 0 0px 0px;
-                        height: auto;
-                        font-size: 20px;
-                        width: auto;}
-                
-                    nav ul { height: 100%;}
-                
-                    nav li {display: inline;
-                        padding: 1.2em 0;}
-                }
+                /*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
+@media only screen and (min-width: 1024px){
+    .menu-btn {display: none;}
+
+    #open-menu {display: none !important;}
+
+    header {position: static;}
+
+    nav {display: block !important;
+        position: static;
+        box-shadow: 0 0px 0px;
+        height: auto;
+        font-size: 20px;
+        width: auto;}
+
+    nav ul { height: 100%;}
+
+    nav li {display: inline;
+        padding: 1.2em 0;}
+}
+    
