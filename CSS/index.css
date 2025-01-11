@@ -134,7 +134,7 @@ section button {color:black;
         margin-top:4%;}
 
 /*The button click-login has been given margins.*/       
-.click-contact {margin-left: 28%;
+.click-contact {margin-left: 27%;
         margin-top: 4%;}
 
 /*When hovering over buttons, the background color becomes blue.*/
@@ -196,7 +196,7 @@ Sections, the form, text and buttons have been given a different location and ap
 text sizes change, some elements become hidden and some elements get different positions.*/
 @media (max-width:600px) {
     #logo {display: none;}
-    #header-pic {max-width: 100%; height: auto;}
+    /*#header-pic {max-width: 100%; height: auto;}*/
     #car {display:block;position:absolute;top:33%;margin-left:1%;width:12%;height:auto;}
     nav a{border-radius:0;}
     nav li {font-size: 0.8em; margin: 0; padding:0; display: inline;}
