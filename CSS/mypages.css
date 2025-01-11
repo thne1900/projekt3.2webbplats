@@ -101,13 +101,14 @@ nav a { border-radius:15px;
 /*nav a:active {color: white;}*/
 
 /*The elements have been given rounded edges, background color and shaded edges.*/
-.menu a { border-radius:15px;
+.menu a {border-radius:15px;
         background-color: #D3E6FE;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
 
 /*nav element get background color and a "pointing finger" when hovering.*/
 a:hover {background-color: rgb(83, 135, 191);
         cursor: pointer;}
+        
 /*The menu button gets placement, padding, background color,a border, box-shadow, 
 a "pointing finger", sizes and margin.*/
 .menu-btn.open {display: flex;
@@ -341,6 +342,7 @@ i.fa-barcode {font-size: 50px; margin:0; padding:0;}
 #cardtext {display: none;}
 .card {padding:0;margin-top:8%;}
 }
+
 /*Media rule at break point of 600px. 
 Elements have been given different positions in a column, text size has been changed, 
 icons have been resized and some objects are hidden.*/

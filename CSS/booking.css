@@ -1,102 +1,116 @@
+/*The body has been given background color, inserted font, text color, 
+text size, height, height, width and placement in the middle.*/
 body {background-color:#FFFCFB;
     font-family: "inter", sans-serif;
     color:black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
     max-width: 1512px;
     height: auto;
     margin-left: auto;
     margin-right: auto;}
     
-    #logo {
-        position:absolute;
-        margin-left:1%;
-        top:2%;
-        border-radius: 15px;
-        width:8%;
-        height:auto;}
+/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+#logo {position:absolute;
+    margin-left:auto;
+    margin-left:auto;
+        top:2.5%;
+    border-radius: 15px;
+    width:10%;
+    height:auto;}
 
-        header {/*the header element has been given color, sizes, placement, margin and padding.*/
-            background-color:#B4BBDF;
-            max-width: 1512px;
-            height: 100px;
-            box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
-            margin:0;
-            position:relative;
-            padding:0 1em;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;}
-        
-    #header-pic{
-            width:100%;
+/*The mobile device logo has been hidden.*/
+#car {display: none;}
+
+/*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
+header {background-color:#B4BBDF;
+    max-width: 1512px;
+    height: 100px;
+    box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
+    margin:0;
+    position:relative;
+    padding:0 1em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;}
+
+/*The header image has been given width, height and coverage.*/      
+#header-pic{width:100%;
             height:auto;
             object-fit: cover;}
-    
-    .header-pic {/*margin-top: 4%;*/
-                text-align: center;}
-    
-    .overlay-text {
-        position:absolute;
+
+/*The image's alt text has been centered.*/  
+.header-pic {text-align: center;}
+
+/*The headings on the header image have been given position, placement and padding.*/    
+.overlay-text {position:absolute;
         top:30%;
         left:50%;
         transform: translate(-50%,-50%);
         padding: 10px;}
-    
-    h1 {font-size: 2.5em;
-    font-weight: bold;
+ 
+/*The main heading (h1) has been given text size, text color, shading, centered text and margin.*/       
+h1 {font-size: 2.5em;
     color:white;
     text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
     text-align: center;
-    margin:0;}
-    
-    nav { /*the nav element has been given color, sizes of text, width and height and line-height as well how it should be displayed.*/
-        background-color: #B4BBDF;
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    margin:0;
+    z-index: 10;}
+
+/*the nav element has been given backgroundcolor, box-shadow, bold style, sizes of text, 
+position width and height, line-height as well how it should be displayed.*/  
+nav {background-color: #B4BBDF;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    top:0;
+    right:0;
+    height: 700px;
+    width: 300px;
+    display: none;
+    line-height: 1.6;
+    z-index: 5;}
+
+/*The nav element's unsorted list has been styled in sizes, placement, margin and padding, 
+bold style and font size.*/  
+nav ul {width: 100%;
+        list-style-type: none;
+        text-align: center;
+        margin: 0 auto;
+        padding:0;
         font-weight: bold;
-        font-size: 1em;
-        position: absolute;
-        top:0;
-        right:0;
-        height: 700px;
-        width: 300px;
-        display: none;
-        line-height: 1.8;}
+        font-size: 1.4em;}
+
+/*The nav element's object has been sized and padded.*/
+nav li {padding: 0.7em 0;
+        width: 100%;
+        height:auto;}
+
+/*The elements have been given rounded corners, background color, 
+text color, bold style, box-shadow, no text-decoration and padding.*/    
+nav a {border-radius:15px;
+        background-color: #D3E6FE;
+        color:black;
+        font-weight: 500;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        padding:10px;}
     
-        nav ul {/*The nav element's unsorted list has been styled in sizes, placement, margin and padding, line-height.*/
-            width: 100%;
-            list-style-type: none;
-            text-align: center;
-            margin: 0 auto;
-            padding:0;
-            font-weight: bold;
-            font-size: 1.5em;
-            line-height: 1.5;}
-    
-     nav li {/*The nav element's object has been sized and padded.*/
-            padding: 0.8em 0;
-            width: 100%;}
-    
-            nav a { border-radius:15px;
-                background-color: #D3E6FE;
-                color:black;
-                font-weight: 500;
-                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-                text-decoration: none;
-                padding:10px;}
-    
-        nav a:active {background-color: white;}
-    
-        .menu a { border-radius:15px;
-            background-color: #D3E6FE;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
-        
-        a:hover {/*nav element links hover, get background color and a "pointing finger".*/
-            background-color: rgb(83, 135, 191);
-            cursor: pointer;}
-    
-        .menu-btn.open {/*the menu button gets placement, padding, background color, frame, a "pointing finger" and sizes.*/
-            display: flex;
+/*nav a:active {background-color: white;}*/
+
+/*The elements have been given rounded edges, background color and shaded edges.*/    
+.menu a {border-radius:15px;
+        background-color: #D3E6FE;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
+
+/*nav element get background color and a "pointing finger" when hovering.*/
+a:hover {background-color: rgb(83, 135, 191);
+        cursor: pointer;}
+
+/*The menu button gets placement, padding, background color,a border, box-shadow, 
+a "pointing finger", sizes and margin.*/    
+.menu-btn.open {display: flex;
             align-items:center;
             padding: 6px 15px;
             background-color:#D3E6FE;
@@ -106,131 +120,180 @@ body {background-color:#FFFCFB;
             width:120px;
             height:60px;
             margin: 0 2em;}
-    
-        .menu-btn:hover {/*menu button on hover gets background color and shadow.*/
-            background-color:rgb(83, 135, 191);
+
+/*menu button, hover, gets background color and shadow.*/    
+.menu-btn:hover {background-color:rgb(83, 135, 191);
             box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
-        
-        .menu-icon {margin-right: 8px;}/*the menu icon gets the right margin.*/
-        
-        .bars {/*The lines in the menu get design, size, background color and margin.*/
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color:black;
-            margin: 5px 0;
-            align-items: center;}
-        
-        .menu-text {/*the menu text has been given size, design, line height and color.*/
-            font-size: 1.5em;
+
+/*The menu icon gets margin.*/        
+.menu-icon {margin-right: 8px;}
+
+ /*The lines in the menu get design, size, background color, margin and text centered.*/       
+.bars {display: block;
+        width: 25px;
+        height: 3px;
+        background-color:black;
+        margin: 5px 0;
+        align-items: center;}
+
+/*The menu-text has been given size, bold style, line height and color.*/       
+.menu-text {font-size: 1.5em;
             font-weight: bold;
             line-height: 1.5;
             color: black;}
-    
-        .close {/*the button to close has been given margin, padding and backgroundcolor.*/ 
-            margin: 1em 1.5em;
-            padding: 10px 15px;
-            background-color: #D3E6FE;
-            text-align: center;}
-        
-        .cross1 {/*the cross on the close button gets size, design, position and placement.*/
-            width: 25px;
-            transform: rotate(45deg);
-            position: relative;
-            top: 5px;}
-        
-        .cross2 {/*the cross on the close button gets size, design, position and placement.*/
-            width: 25px;
-            transform: rotate(135deg);
-            position: relative;
-            top: -3px;}
+/*The button to close has been given margin, padding, backgroundcolor and text centered.*/    
+.close {margin: 1em 1.5em;
+        padding: 10px 15px;
+        background-color: #D3E6FE;
+        text-align: center;}
 
-            .grid-container {/*A grid container with rows and columns and gaps in between.*/
-                display: grid;
+/*The cross on the close button gets size, design, position and placement.*/       
+.cross1 {width: 25px;
+        transform: rotate(45deg);
+        position: relative;
+        top: 5px;}
+
+/*The cross on the close button gets size, design, position and placement.*/       
+.cross2 {width: 25px;
+        transform: rotate(135deg);
+        position: relative;
+        top: -3px;}
+
+/*A grid container with rows, columns and gaps in between.*/
+.grid-container {display: grid;
                 grid-template-rows: auto;
-                grid-template-columns:repeat(3, 1fr);
+                grid-template-columns:repeat(2, 1fr);
                 grid-column-gap: 2%;}
 
-            .booking {grid-row-start: 1;
-                grid-column-start: 1;
-                grid-row-end: 2;
-                grid-column-end: 3;
-            }
-            h2 {text-align: center;}
+/*Placement of the (form)element in the grid container.*/
+.booking {grid-row-start: 1;
+        grid-column-start: 1;
+        grid-row-end: 2;
+        grid-column-end: 3;}
 
-            form {text-align: center;
-                font-size: 1.2em;
-                line-height: 1.6;
-                background-color: #B4BBDF;
-                box-sizing: border-box;
-            border-radius: 15px;
-            padding-top:2%;
-            padding-bottom: 4%;
-        margin-left: 25%;
+/*the form has received some properties around centered text, text size, line height and margins.*/
+form {text-align: center;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-left: 25%;
     margin-right: 25%;
-margin-top:8%;
-margin-bottom: 8%;}
+    margin-top:4%;
+    margin-bottom: 8%;}
 
-input {
-padding:1%;
-border:1px solid #ccc;
-border-radius: 5px;
-}
-#adress {padding:1.5%; width:25%; height:auto;font-size: 0.9em;}
+/*The fieldset has been given a background color, rounded edges, padding and shading.*/
+fieldset {background-color: #B4BBDF; 
+    border-radius: 15px;
+    padding:4%; 
+    padding-bottom: 4%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
+
+/*Legend has been given text size and bold style.*/
+legend {font-size: 1.5em; font-weight: bold;}
+
+/*The inputs have received padding, rounded coloring edges.*/
+input {padding:1%;
+    border:1px solid #ccc;
+    border-radius: 5px;}
+
+/*Properties of the element with padding, width, height and text size.*/
+#adress {padding:1.5%; 
+    width:25%; 
+    height:auto;
+    font-size: 0.9em;}
+
+/*Properties of the element with text size, bold style, width and height.*/
 #date {font-size: 1em; font-weight: bold; width:25%; height:auto;}
+
+/*Properties of the element with text size, bold style, width and height.*/
 #time {font-size:1em; font-weight: bold; width:15%; height:auto;}
-#interval {
-font-size: 1em;
-background-color: white;
-border:1px solid #ccc;
-border-radius: 5px;}
-#else {padding:1.5%; width:25%; height:auto; font-size: 0.9em;}
 
+/*Properties of the element with text size, background color, colored rounded edges.*/
+#interval {font-size: 1em;
+    background-color: white;
+    border:1px solid #ccc;
+    border-radius: 5px;}
+/* Properties of the element with padding, width, height and text size.*/  
+#else {padding:1.5%; 
+    width:25%; 
+    height:auto; 
+    font-size: 0.9em;}
+
+/*The button has been given a background color, padding, text size, rounded edges and shading.*/
 .book-here {background-color: white;
-    padding: 1%;
-font-size: 1.2em;
-border-radius: 15px;
-border:none;
-box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
+        padding: 1%;
+        font-size: 1.2em;
+        border-radius: 15px;
+        border:none;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
 
+/*The button has been given a background color, padding, text size, rounded edges and shading.*/
 .confirm {background-color: #53D76C;
-    padding:3%;
-font-size: 1.3em;
-border-radius: 15px;
-border:none;
-box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
+        padding:3%;
+        font-size: 1.3em;
+        border-radius: 15px;
+        border:none;
+        box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
 
+/*The button has been given a background color and "pointing finger" when hovering.*/
 .confirm:hover { background-color: rgb(83, 135, 191);
     cursor: pointer;}
 
-.book-here {cursor: pointer;}
+/*The button has been given a background color and "pointing finger" when hovering.*/
+.book-here:hover {background-color: rgb(83, 135, 191);
+    cursor: pointer;}
 
+/*The icon has been resized.*/
+i.fa-wheelchair {font-size: 30px;}
+
+/*The icon has been resized.*/
+i.fa-person-circle-plus {font-size:30px;}
+
+/*Footer has been placed with a grid area.*/ 
 .footer {grid-area: 3/1/4/4;}
 
-footer {
-    font-size: 1em;
+/*The content in the footer has been given text size, background color, padding, centered text and margin.*/
+footer {font-size: 1em;
     background-color: #B4BBDF;
     padding:1%;
-    text-align: center;}
+    text-align: center;
+    margin-bottom:0;}
 
-/*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
+/*Media rule, breakpoint 1024px, controls what should be shown or not on the menu.*/
 @media only screen and (min-width: 1024px){
     .menu-btn {display: none;}
-
     #open-menu {display: none !important;}
-
     header {position: static;}
-
     nav {display: block !important;
         position: static;
         box-shadow: 0 0px 0px;
         height: auto;
         font-size: 20px;
         width: auto;}
-
     nav ul { height: 100%;}
-
-    nav li {display: inline;
-        padding: 1.2em 0;}
+    nav li {display: inline;padding: 1.2em 0;}
 }
-    
+
+/*Media rule at break point between 1024 and 600 pixels: the logo has been placed differently, 
+the main heading has been resized and the form has had its text size and margin changed.*/
+@media (max-width:1024px) and (min-width:600px){
+    #logo {top:25%;}
+    h1 {font-size: 2em;}
+    form {font-size: 1.1em; margin-left: 15%; margin-right:15%;}
+}
+
+/*Media rule at breakpoint of 600px: Some elements have been repositioned, some have been hidden, 
+the text size has changed and the elements have been placed in a column.*/
+@media (max-width:600px) {
+    #logo{display:none;}
+    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    h1 {font-size: 1.6em;}
+    .overlay-text{top:25%;}
+    .booking {margin-left:4%; margin-right: 4%;}
+    legend {font-size: 1.3em;}
+    form {font-size: 1em;}
+    i.fa-wheelchair {display: none;}
+    i.fa-person-circle-plus {display: none;}
+    #else {width:35%;}
+    .confirm {padding:2%; font-size:1.2em ;}
+    footer {font-size: 0.7em;}
+}
