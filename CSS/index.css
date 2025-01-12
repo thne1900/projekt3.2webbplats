@@ -163,7 +163,7 @@ form input {padding:2%;
     margin-bottom: 8%;}
 
 /*The text in section has been given text size, centered placement and bold style.*/
-.new p {font-size: 1.1em;
+.newtext {font-size: 1.1em;
     text-align: center;
     font-weight: bold;}
 
@@ -212,7 +212,7 @@ text sizes change, some elements become hidden and some elements get different p
     form input {padding:1%;}
     .login {border-radius:0; grid-area:1/1/2/4; margin-left:4%; margin-right:4%;padding:8%;}
     .new {grid-area: 3/1/4/4; margin-left:4%; margin-right:4%; border-radius:0;}
-    .new p { font-size: 1em;}
+    .newtext { font-size: 1em;}
     .click-login{font-size: 1em; margin-left: 33%;}
     .click-contact {margin-left: 30%;font-size: 1em;}
     .footer {grid-area:5/1/6/4;}
