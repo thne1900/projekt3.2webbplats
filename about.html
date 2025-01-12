@@ -3,19 +3,21 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <title>Färdtjänstbokning</title>
+    <title>Färdtjänstbokning</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/about.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
-    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
-    <style>
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png"><!--website favicon-->
+    <style>/*Downloaded fonts from google fonts.*/
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
-        <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
 </head>
 <body>
+<!--The header containing the logo and the navigation menu.-->
 <header>
-    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
-        <div class="menu.resp"><!--Class containing menu navigation-->
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bil med text"></a><!--Logo for desktop and tablet-->
+    <a href="mypages.html"><img src="bilder/bil.png" id="car" alt="Svart bil"></a><!--Logo for mobile phone-->
+        <!--<div class="menu.resp">Class containing menu navigation-->
             <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
                <span class="menu-icon"><!--designing the appearance of the menu-->
                    <span class="bars"></span>
@@ -32,8 +34,7 @@
                    </span>
                    <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
                </button>
-
-<ul class="menu">
+<ul class="menu"><!--An unsorted list of the menu choices with icons.-->
     <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
     <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
     <li><a href="cancel.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
@@ -59,64 +60,67 @@
                }
            }
        </script>
-       </div>
+       <!--</div>-->
     </header>
+    <!--Figure element for image with an overlying main heading.-->
     <figure class="header-pic">
         <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
     <section class="overlay-text">
         <h1>Om färdtjänst:</h1>
     </section>
 </figure>
-
+<!--Div element for a grid container for the element's locations.-->
 <div class="grid-container">
-
+<!--Section containing headings, unsorted lists and texts.-->
 <section class="about">
-    <h2><strong>Vad innebär det att resa med färdtjänst? </strong></h2>
+    <h2>Vad innebär det att resa med färdtjänst?</h2>
     <p>För dig som går under lagen (1997:735) om färdtjänst, 
     med någon form av funktionsvariation, som gör att du inte kan på egen hand förflytta dig eller ta dig fram med kollektivtrafiken. 
     Denna webbplats riktar sig till de personer som är bosatta inom Kungälvs kommun. 
     Som är i behov att kunna boka en färdtjänstresa för sina vardagssituationer, som tex ett sjukhusbesök. 
     Ett mindre fordon används vid dessa resor.</p>
-
-    <h3><strong>Du som har rätt till färdtjänst ska uppfylla vissa krav:</strong></h3>
-    <p>-Svårigheter i hög grad att på egenhand kunna förflytta dig.</p>
-    <p>-Inte kunna använda kollektivtrafiken (ex buss eller tåg) pga. av din funktionsvariation.</p>
-    <p>-Bosatt och skriven i Kungälvs kommun, det är via kommunen som ansökan görs kring färdtjänst.</p>
-    <p>-Din funktionsvariation är bedömd till att vara bestående minst tre månader.</p>
-    
-    <h3><strong>Färdtjänsttillstånd:</strong></h3>
+    <h3>Du som har rätt till färdtjänst ska uppfylla vissa krav:</h3>
+    <ul class="terms">
+    <li>Svårigheter i hög grad att på egenhand kunna förflytta dig.</li>
+    <li>Inte kunna använda kollektivtrafiken (ex buss eller tåg) pga. av din funktionsvariation.</li>
+    <li>Bosatt och skriven i Kungälvs kommun, det är via kommunen som ansökan görs kring färdtjänst.</li>
+    <li>Din funktionsvariation är bedömd till att vara bestående minst tre månader.</li>
+    </ul>
+    <h3>Färdtjänsttillstånd:</h3>
     <p>Utfärdas då kraven uppfylls och innehåller den tid du är beviljad att få rätt till färdtjänst. 
     Det kan också finnas förskrivet speciella regler för ditt innehav, 
     som att resorna enbart får utföras inom ett begränsat område eller ett limiterat antal resor som kan nyttjas. 
     Du får då ett personligt färdtjänstkort. 
     Samåkning kan ske med andra resenärer.</p>
-    
-    <h3><strong>Ansökan:</strong></h3>
+    <h3>Ansökan:</h3>
     <p>En ansökan om färdtjänst görs genom att skicka in ansökningsblanketten till Kungälvs kommun via post eller email. 
     Ett läkarutlåtande behöver bifogas med blanketten.</p>
 </section>
-
+<!--Aside elements containing: header, icons, unsorted lists and text-->
 <aside class="price">
-<h3><strong><i class="fa-solid fa-dollar-sign"></i> Prislista:</strong></h3>
+<h3><i class="fa-solid fa-dollar-sign"></i> Prislista:</h3>
 <p><strong>För vuxna:</strong></p>
-<p>*Inom Kungälvs Kommun: 78 kr</p>
-<p>*Mellan Kungälv-Ale: 94 kr</p>
-<p>*Mellan Kungälv- Göteborg: 157 kr</p>
+<ul class="price.list">
+<li>Inom Kungälvs Kommun: 78 kr</li>
+<li>Mellan Kungälv-Ale: 94 kr</li>
+<li>Mellan Kungälv- Göteborg: 157 kr</li>
+</ul>
 <p><strong>Nattaxa:</strong> Gäller resor mellan: 00:00-04:00 : 50% tillägg.</p>
 <br>
 <p><strong>För ungdom:</strong>(från 7-20 år)</p>
-<p>*Inom Kungälvs Kommun: 59 kr</p>
-<p>*Mellan Kungälv-Ale: 71 kr</p>
-<p>*Mellan Kungälv-Göteborg 118 kr</p>
+<ul class="price.list">
+<li>Inom Kungälvs Kommun: 59 kr</li>
+<li>Mellan Kungälv-Ale: 71 kr</li>
+<li>Mellan Kungälv-Göteborg 118 kr</li>
+</ul>
 <p><strong>Nattaxa:</strong> Gäller resor mellan: 00:00-04:00 : 50% tillägg.</p>
 <i class="fa-solid fa-car"></i>
 </aside>
-
-
+<!--Footer element with contact details and availability statement.-->
 <footer class="footer">
-    <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-    © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
-    </footer>
+    <p><strong>Kontaktuppgifter:</strong>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+    © Copyright 2024•Kungälvs kommun Färdtjänstresor. <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+</footer>
 </div>
 </body>
 </html>
