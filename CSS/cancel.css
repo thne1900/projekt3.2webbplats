@@ -1,217 +1,252 @@
+/*The body has been given background color, inserted font, text color, 
+text size, height, height, width and placement in the middle.*/
 body {background-color:#FFFCFB;
     font-family: "inter", sans-serif;
     color:black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5;
     max-width: 1512px;
     height: auto;
     margin-left: auto;
     margin-right: auto;}
     
-    #logo {
-        position:absolute;
-        margin-left:1%;
-        top:2%;
-        border-radius: 15px;
-        width:8%;
-        height:auto;}
+/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+#logo {position:absolute;
+    margin-left:auto;
+    margin-left:auto;
+        top:2.5%;
+    border-radius: 15px;
+    width:10%;
+    height:auto;}
 
-        header {/*the header element has been given color, sizes, placement, margin and padding.*/
-            background-color:#B4BBDF;
-            max-width: 1512px;
-            height: 100px;
-            box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
-            margin:0;
-            position:relative;
-            padding:0 1em;
-            display:flex;
-            justify-content: space-between;
-            align-items: center;}
+/*The mobile device logo has been hidden.*/
+#car {display: none;}
+
+/*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
+header {background-color:#B4BBDF;
+    max-width: 1512px;
+    height: 100px;
+    box-shadow:0px 4px 4px 0px rgba(0,0,0,1);
+    margin:0;
+    position:relative;
+    padding:0 1em;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;}
         
-    #header-pic{
-            width:100%;
-            height:auto;
-            object-fit: cover;}
+/*The header image has been given width, height and coverage.*/        
+#header-pic{width:100%;
+    height:auto;
+    object-fit: cover;}
+
+/*The image's alt text has been centered.*/   
+.header-pic {text-align: center;}
     
-    .header-pic {/*margin-top: 4%;*/
-                text-align: center;}
-    
-    .overlay-text {
-        position:absolute;
-        top:30%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        padding: 10px;}
-    
-    h1 {font-size: 2.5em;
-    font-weight: bold;
+/*The headings on the header image have been given position, placement and padding.*/
+.overlay-text {position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;}
+
+/*The main heading (h1) has been given text size, text color, shading, centered text and margin.*/
+h1 {font-size: 2.5em;
     color:white;
     text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
     text-align: center;
-    margin:0;}
+    margin:0;
+    z-index: 10;}
     
-    nav { /*the nav element has been given color, sizes of text, width and height and line-height as well how it should be displayed.*/
-        background-color: #B4BBDF;
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
-        font-weight: bold;
-        font-size: 1em;
-        position: absolute;
-        top:0;
-        right:0;
-        height: 700px;
-        width: 300px;
-        display: none;
-        line-height: 1.8;}
+/*the nav element has been given backgroundcolor, box-shadow, bold style, sizes of text, 
+position width and height, line-height as well how it should be displayed.*/  
+nav {background-color: #B4BBDF;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    top:0;
+    right:0;
+    height: 700px;
+    width: 300px;
+    display: none;
+    line-height: 1.6;
+    z-index: 5;}
     
-        nav ul {/*The nav element's unsorted list has been styled in sizes, placement, margin and padding, line-height.*/
-            width: 100%;
-            list-style-type: none;
-            text-align: center;
-            margin: 0 auto;
-            padding:0;
-            font-weight: bold;
-            font-size: 1.5em;
-            line-height: 1.5;}
+/*The nav element's unsorted list has been styled in sizes, placement, margin and padding, 
+bold style and font size.*/  
+nav ul {width: 100%;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding:0;
+    font-weight: bold;
+    font-size: 1.4em;}
     
-     nav li {/*The nav element's object has been sized and padded.*/
-            padding: 0.8em 0;
-            width: 100%;}
+/*The nav element's object has been sized and padded.*/
+nav li {padding: 0.7em 0;
+    width: 100%;
+    height:auto;} 
     
-            nav a { border-radius:15px;
-                background-color: #D3E6FE;
-                color:black;
-                font-weight: 500;
-                box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-                text-decoration: none;
-                padding:10px;}
-    
-        nav a:active {background-color: white;}
-    
-        .menu a { border-radius:15px;
-            background-color: #D3E6FE;
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
-        
-        a:hover {/*nav element links hover, get background color and a "pointing finger".*/
-            background-color: rgb(83, 135, 191);
-            cursor: pointer;}
-    
-        .menu-btn.open {/*the menu button gets placement, padding, background color, frame, a "pointing finger" and sizes.*/
-            display: flex;
-            align-items:center;
-            padding: 6px 15px;
-            background-color:#D3E6FE;
-            border: black solid 1px;
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);
-            cursor: pointer;
-            width:120px;
-            height:60px;
-            margin: 0 2em;}
-    
-        .menu-btn:hover {/*menu button on hover gets background color and shadow.*/
-            background-color:rgb(83, 135, 191);
-            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
-        
-        .menu-icon {margin-right: 8px;}/*the menu icon gets the right margin.*/
-        
-        .bars {/*The lines in the menu get design, size, background color and margin.*/
-            display: block;
-            width: 25px;
-            height: 3px;
-            background-color:black;
-            margin: 5px 0;
-            align-items: center;}
-        
-        .menu-text {/*the menu text has been given size, design, line height and color.*/
-            font-size: 1.5em;
-            font-weight: bold;
-            line-height: 1.5;
-            color: black;}
-    
-        .close {/*the button to close has been given margin, padding and backgroundcolor.*/ 
-            margin: 1em 1.5em;
-            padding: 10px 15px;
-            background-color: #D3E6FE;
-            text-align: center;}
-        
-        .cross1 {/*the cross on the close button gets size, design, position and placement.*/
-            width: 25px;
-            transform: rotate(45deg);
-            position: relative;
-            top: 5px;}
-        
-        .cross2 {/*the cross on the close button gets size, design, position and placement.*/
-            width: 25px;
-            transform: rotate(135deg);
-            position: relative;
-            top: -3px;}
+/*The elements have been given rounded corners, background color, 
+text color, bold style, box-shadow, no text-decoration and padding.*/
+nav a { border-radius:15px;
+    background-color: #D3E6FE;
+    color:black;
+    font-weight: 500;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding:10px;}
 
-            .grid-container {/*A grid container with rows and columns and gaps in between.*/
-                display: grid;
+/*nav a:active {color: white;}*/
+    
+/*The elements have been given rounded edges, background color and shaded edges.*/    
+.menu a {border-radius:15px;
+    background-color: #D3E6FE;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
+
+/*nav element get background color and a "pointing finger" when hovering.*/
+a:hover {background-color: rgb(83, 135, 191);
+    cursor: pointer;}
+    
+/*The menu button gets placement, padding, background color,a border, box-shadow, 
+a "pointing finger", sizes and margin.*/    
+.menu-btn.open {display: flex;
+    align-items:center;
+    padding: 6px 15px;
+    background-color:#D3E6FE;
+    border: black solid 1px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);
+    cursor: pointer;
+    width:120px;
+    height:60px;
+    margin: 0 2em;}
+    
+/*menu button, hover, gets background color and shadow.*/    
+.menu-btn:hover {background-color:rgb(83, 135, 191);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
+
+/*The menu icon gets margin.*/        
+.menu-icon {margin-right: 8px;}  
+        
+/*The lines in the menu get design, size, background color, margin and text centered.*/       
+.bars {display: block;
+    width: 25px;
+    height: 3px;
+    background-color:black;
+    margin: 5px 0;
+    align-items: center;}
+
+/*The menu-text has been given size, bold style, line height and color.*/       
+.menu-text {font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.5;
+        color: black;}
+    
+/*The button to close has been given margin, padding, backgroundcolor and text centered.*/    
+.close {margin: 1em 1.5em;
+    padding: 10px 15px;
+    background-color: #D3E6FE;
+    text-align: center;}
+
+/*The cross on the close button gets size, design, position and placement.*/       
+.cross1 {width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;}
+
+/*The cross on the close button gets size, design, position and placement.*/       
+.cross2 {width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;} 
+
+/*A grid container with rows, columns and gaps in between.*/
+.grid-container {display: grid;
                 grid-template-rows: auto;
                 grid-template-columns:repeat(3, 1fr);
                 grid-column-gap: 2%;}
 
-                .cancel {grid-row-start: 1;
-                    grid-column-start: 2;
-                    grid-row-end: 2;
-                    grid-column-end: 2;
-                border: 35px solid #B4BBDF;
-            border-radius: 15px;
+/* The element has been placed in the grid container, rounded edge, background color, 
+padding, margin, centered text, height and width.*/              
+.canceltrip {grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 2;
+        grid-column-end: 2;
+        border: 35px solid #B4BBDF;
+        border-radius: 15px;
         background-color: white;
-    padding:4%;
-margin-bottom: 8%;
-text-align: center;
-max-width: 100%;
-height: auto;}
+        padding:4%;
+        margin-bottom: 8%;
+        text-align: center;
+        max-width: 100%;
+        height: auto;}
 
- button.cancel {font-size: 1.2em;
-    background-color: #FED3D3;
-font-weight: bold;
-max-width: 300px;
-height: auto;}
+/* The text has been resized.*/      
+.canceltrip p {font-size: 1.2em;}
 
+/*The button has properties such as, text size, background color, bold style, width, height, 
+padding, margin and box-shadow.*/
+.cancel {font-size: 1.2em;
+        background-color: #FED3D3;
+        border-radius: 15px;
+        border:0;
+        font-weight: bold;
+        max-width: 100%;
+        height: auto;
+        padding:4%;
+        margin-bottom: 4%;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);}
 
+/*The button gets background color and a "pointing finger" when hovering.*/   
+.cancel:hover {background-color: rgb(83, 135, 191);
+                cursor: pointer;}
 
-                    .footer {grid-area:3/1/4/4;}
+/*Footer has been placed with a grid area.*/ 
+.footer {grid-area:2/1/3/4;}
 
-                footer {
-                    font-size: 1em;
-                    background-color: #B4BBDF;
-                    padding:1%;
-                    text-align: center;}
+/*The content in the footer has been given text size, background color, padding, centered text and margin.*/
+footer {font-size: 1em;
+    background-color: #B4BBDF;
+    padding:1%;
+    text-align: center;
+    margin-bottom:0;}
                 
-                /*Media rule, breakpoint 834px, controls what should be shown or not on the (hamburger)menu.*/
-                @media only screen and (min-width: 1024px){
-                    .menu-btn {display: none;}
-                
-                    #open-menu {display: none !important;}
-                
-                    header {position: static;}
-                
-                    nav {display: block !important;
+/*Media rule, breakpoint 1024px, controls what should be shown or not on the menu.*/
+@media only screen and (min-width: 1024px){
+    .menu-btn {display: none;}
+    #open-menu {display: none !important;}
+    header {position: static;}
+    nav {display: block !important;
                         position: static;
                         box-shadow: 0 0px 0px;
                         height: auto;
                         font-size: 20px;
                         width: auto;}
-                
-                    nav ul { height: 100%;}
-                
-                    nav li {display: inline;
-                        padding: 1.2em 0;}
-                }
-                @media (max-width:1024px) and (min-width:600px) {
+    nav ul { height: 100%;}
+    nav li {display: inline;padding: 1.2em 0;}
+    }
 
-                    h1{font-size: 2em;}
-                    h2{font-size: 1.5em;}
-                    .cancel {width:80%;font-size: 1em;border-radius: 0;}
-                    section p {font-size: 1.3em;}
-                    button.cancel {border-radius: 0;}
-                }
-                @media (max-width:600px) {
-                    .cancel {grid-area:1/1/2/4;
-                    margin-left: 4%;
-                margin-right:4%;}
-
-                footer {font-size: 0.7em;}
-                }
+/*Media rule with a break point between 1024 and 600 pixels: the logo has been repositioned, 
+headings have been resized and elements have been resized and rounded edges have been removed.*/
+@media (max-width:1024px) and (min-width:600px) {
+    #logo {top:25%;}
+    h1{font-size: 2em;}
+    h2{font-size: 1.5em;}
+    .canceltrip {width:80%;border-radius: 0;}
+    }
+    
+/* Media rule with a break point of 600 pixels: the logo has been removed and another one is visible, 
+headings have been given a different size and position, elements have been given a position, margin, 
+and rounded edges have been removed and the button has been given a different text size.*/            
+@media (max-width:600px) {
+    #logo{display:none;}
+    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    h1 {font-size: 1.6em;}
+    h2{font-size: 1.3em;}
+    .overlay-text{top:25%;}
+    .canceltrip {grid-area:1/1/2/4;margin-left: 4%;margin-right:4%; border-radius:0;}
+    .canceltrip p {font-size: 1.1em;}
+    footer {font-size: 0.7em;}
+    .cancel {font-size: 1.1em;}
+    
+}
