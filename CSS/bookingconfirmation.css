@@ -231,7 +231,7 @@ text sizes change, elements get a different position, margin and padding are adj
     #logo{display:none;}
     #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
     h1{font-size: 1.6em;}
-    h2{font-size: 1.2;}
+    h2{font-size: 1.2em;}
     .booking-confirmation {grid-area:1/1/2/3;margin-left:4%;margin-right: 4%; padding-left: 8%;}
     section p {font-size: 1em;}
     .textobject1 {font-size: 1.1em;}

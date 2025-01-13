@@ -3,19 +3,21 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <title>Färdtjänstbokning</title>
+    <title>Färdtjänstbokning</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/accessibility.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
-    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png">
-    <style>
+    <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png"><!--website favicon-->
+    <style>/*Downloaded fonts from google fonts.*/
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
         </style>
-        <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/321c3d6291.js" crossorigin="anonymous"></script><!--Downloaded font awesome icons-->
 </head>
 <body>
+<!--The header containing the logo and the navigation menu.-->    
 <header>
-    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a>
-        <div class="menu.resp"><!--Class containing menu navigation-->
+    <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a><!--Logo for desktop and tablet-->
+    <a href="mypages.html"><img src="bilder/bil.png" id="car" alt="Svart bil"></a><!--Logo for mobile phone-->
+        <!--<div class="menu.resp">Class containing menu navigation-->
             <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
                <span class="menu-icon"><!--designing the appearance of the menu-->
                    <span class="bars"></span>
@@ -32,8 +34,7 @@
                    </span>
                    <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
                </button>
-
-<ul class="menu">
+<ul class="menu"><!--An unsorted list of the menu choices with icons.-->
     <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
     <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
     <li><a href="cancel.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
@@ -59,18 +60,20 @@
                }
            }
        </script>
-       </div>
+       <!--</div>-->
     </header>
+    <!--Figure element for image with an overlying main heading.-->
     <figure class="header-pic">
         <img src="bilder/header.jpg" alt="Vy över till staden Kungälv" id="header-pic">
     <section class="overlay-text">
         <h1>Tillgänglighetsredogörelse:</h1>
     </section>
 </figure>
+<!--Div element for a grid container for the element's locations.-->
 <div class="grid-container">
-
+<!--Section element containing headings, links and texts.-->
 <section class="text">
-    <h2>Tillgänglighet för Färdtjänstbokning</h2>
+    <h2>Tillgänglighet för Kungälvs kommuns Färdtjänstbokning</h2>
         <p>Kungälvs kommun står bakom den här webbplatsen. 
         Vi vill att så många som möjligt ska kunna använda den. 
         Det här dokumentet beskriver hur Färdtjänstbokning uppfyller lagen om tillgänglighet till digital offentlig service, 
@@ -82,9 +85,11 @@
     <p>Om du behöver innehåll från Färdtjänstbokning som inte är tillgängligt för dig, 
         men som är undantaget från lagens tillämpningsområde enligt beskrivning nedan, kan du <a href="contact.html">meddela oss.</a></p>
     <p>Svarstiden är normalt inom 12 timmar. 
-    Du kan också kontakta oss på följande sätt:
-            •	skicka e-post till <a href="thne1900@student.miun.se">fardtjanstbokning.kungalv@hotmail.com</a>
-            •	ring: 0303-2200XX.
+    Du kan också kontakta oss på följande sätt:</p>
+    <ul>
+    <li>Skicka e-post till: <a href="mailto:thne1900@student.miun.se">fardtjanstbokning.kungalv@hotmail.com</a></li>
+    <li>Ring: 0303-2200XX.</li>
+    </ul>
     <h3>Rapportera brister i webbplatsens tillgänglighet</h3>
     <p>Vi strävar hela tiden efter att förbättra webbplatsens tillgänglighet. 
         Om du upptäcker problem som inte är beskrivna på den här sidan, 
@@ -93,7 +98,7 @@
     <h3>Tillsyn</h3>
     <p>Myndigheten för digital förvaltning, Digg, har ansvaret för tillsyn över lagen om tillgänglighet till digital offentlig service. 
         Du kan <a href="https://www.digg.se/">anmäla till Digg</a> om du tycker att vår digitala service har brister i tillgänglighet.
-        Du kan också <a href="https://www.digg.se/"></a>anmäla till Digg</a> om du tycker att vår bedömning av vad som är oskäligt betungande ska granskas, 
+        Du kan också <a href="https://www.digg.se/">anmäla till Digg</a> om du tycker att vår bedömning av vad som är oskäligt betungande ska granskas, 
         om du tycker att vår tillgänglighetsredogörelse har brister eller om du tycker att vi inte har 
         hanterat din begäran om tillgängliggörande korrekt.
         </p>
@@ -105,7 +110,7 @@
         <p>Det innehåll som beskrivs nedan är på ett eller annat sätt inte helt tillgängligt.
             [
             <h4>Bristande förenlighet med lagkraven</h4>
-            [Problem vid {<användningssituation>}
+            <p>[Problem vid {<användningssituation>}
             •	{<beskrivning av innehåll och problem>}
             …]
             
@@ -132,11 +137,11 @@
                 Redogörelsen uppdaterades senast den 2025-01-15.
                 </p>
             </section>
-
+            <!--Footer element with contact details and availability statement.-->
             <footer class="footer">
-                <p><b>Kontaktuppgifter:</b>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-                © Copyright 2024•Kungälvs kommun Färdtjänstresor.</p>
-                </footer>
+                <p><strong>Kontaktuppgifter:</strong>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
+                © Copyright 2024•Kungälvs kommun Färdtjänstresor. <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+            </footer>
             </div>
             </body>
             </html>

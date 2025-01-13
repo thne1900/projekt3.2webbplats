@@ -205,7 +205,7 @@ bold style and centered text.*/
 .email a{font-size:0.9em;}
 
 /*The form has been placed with a grid area.*/
-form {grid-area:2/2/4/2;margin-right: 25%;}
+form {grid-area:2/2/4/2;margin-right: 25%;margin-bottom: 8%;}
 
 /*The element has been given a background color, rounded edges, padding and shading.*/
 fieldset {background-color: #B4BBDF;

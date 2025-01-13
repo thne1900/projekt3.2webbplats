@@ -100,7 +100,7 @@ text-align: center;}
 .grid-container {display: grid;
     grid-template-rows: auto;
     grid-template-columns:repeat(3, 1fr);
-    grid-column-gap: auto;}
+    grid-column-gap: 2%;}
 
 /*The login section has been placed in a grid container and given padding, width, 
 height, background color, rounded edges and margin.*/
