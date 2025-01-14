@@ -79,10 +79,9 @@ header {background-color:#B4BBDF;
 /*The main heading (h1) has been given text size, text color, shading, centered text and margin.*/
 h1 {font-size: 2em;
     color:white;
-    text-shadow: 4px 4px 6px rgb(0,0,0,0.5);
+    text-shadow: 4px 4px 6px rgb(0,0,0,0.9);
     text-align: center;
-    margin-bottom:0.5%;
-    /*z-index: 1;*/}
+    margin-bottom:0.5%;}
 
 /*The subheading (h2) has been given text size, color, margin, centered text and shading.*/
 h2 {font-size: 1.8em;
@@ -90,11 +89,13 @@ color:white;
 margin-top: 0.5%;
 text-align: center;
 margin-bottom: 4%;
-text-shadow: 4px 4px 6px rgb(0,0,0,0.5);}
+text-shadow: 4px 4px 6px rgb(0,0,0,0.9);}
 
-/*The subheading (h3) has been given a bold style and centered text.*/
+/*The legend has been given a bold style, centered text and font-size.*/
 legend {font-weight: 500;
-text-align: center;}
+text-align: center; font-size: 1.3em;}
+
+/*Fieldset has been given no border and padding.*/
 fieldset {border:0; padding:8%;}
 
 /*A grid container with rows, columns and gaps in between.*/
@@ -152,8 +153,8 @@ section button {color:black;
 .click-contact {margin-left: 27%;
         margin-top: 4%;}
 
-/*When hovering over buttons, the background color becomes blue.*/
-button:hover {background-color: rgb(83, 135, 191);}
+/*When hovering over buttons, the background color becomes blue and a "pointing finger"*/
+button:hover {background-color: rgb(83, 135, 191);cursor: pointer;}
 
 /*the element label in the form has been given text size and bold style.*/
 form label {font-size: 1.2em; font-weight: 500;}
@@ -201,7 +202,7 @@ Sections, the form, text and buttons have been given a different location and ap
         h2{font-size:1.5em;}
         h3 {font-size: 1.3em;}
         .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
-        form label {padding-left: 20%; font-size: 1.1em;}
+        form label {padding-left:auto;padding-right:auto; font-size: 1.1em;}
         form input {padding:1%;}
         .click-login {margin-left: 33%;}
         .logintext {margin-left: 20%; margin-right: 20%;}
@@ -212,7 +213,6 @@ Sections, the form, text and buttons have been given a different location and ap
 text sizes change, some elements become hidden and some elements get different positions.*/
 @media (max-width:600px) {
     #logo {display: none;}
-    /*#header-pic {max-width: 100%; height: auto;}*/
     #car {display:block;position:absolute;top:33%;margin-left:1%;width:12%;height:auto;}
     nav a{border-radius:0;}
     nav li {font-size: 0.8em; margin: 0; padding:0; display: inline;}
