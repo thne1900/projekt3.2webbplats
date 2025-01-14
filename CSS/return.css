@@ -166,11 +166,23 @@ a "pointing finger", sizes and margin.*/
                 grid-template-columns:repeat(2, 1fr);
                 grid-column-gap: 2%;}
 
+h2{text-align: center;}
+
+/*placement of the element, margins, backgroundcolor, border radius and box shadow.*/
+.trip{grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 1;
+    grid-column-end: 3;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color: #B4BBDF; 
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
+
+.trip p {font-size: 1.1em; text-align: center; }
+
 /*Placement of the (form)element in the grid container.*/
-.booking {grid-row-start: 1;
-        grid-column-start: 1;
-        grid-row-end: 2;
-        grid-column-end: 3;}
+.booking {grid-area: 2/1/3/3;}
 
 /*the form has received some properties around centered text, text size, line height and margins.*/
 form {text-align: center;
@@ -178,7 +190,7 @@ form {text-align: center;
     line-height: 1.6;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top:4%;
+    /*margin-top:4%;*/
     margin-bottom: 8%;}
 
 /*The fieldset has been given a background color, rounded edges, padding and shading.*/
@@ -189,7 +201,7 @@ fieldset {background-color: #B4BBDF;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
 
 /*Legend has been given text size and bold style.*/
-legend {font-size: 1.5em; font-weight: bold;}
+legend {font-size: 1.5em; font-weight: bold; padding-top:15%;}
 
 /*The inputs have received padding, rounded coloring edges.*/
 input {padding:1%;
@@ -280,6 +292,7 @@ the main heading has been resized and the form has had its text size and margin 
     #logo {top:25%;}
     h1 {font-size: 2em;}
     form {font-size: 1.1em; margin-left: 15%; margin-right:15%;}
+    .trip {margin-left:15%;margin-right:15%;}
 }
 
 /*Media rule at breakpoint of 600px: Some elements have been repositioned, some have been hidden, 
@@ -288,8 +301,11 @@ the text size has changed and the elements have been placed in a column.*/
     #logo{display:none;}
     #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
     h1 {font-size: 1.6em;}
+    h2 {font-size: 1.3em;}
     .overlay-text{top:25%;}
     .booking {margin-left:4%; margin-right: 4%;}
+    .trip {margin-left: 4%; margin-right: 4%;}
+    .trip p {font-size: 1em;}
     legend {font-size: 1.3em;}
     form {font-size: 1em;}
     i.fa-wheelchair {display: none;}

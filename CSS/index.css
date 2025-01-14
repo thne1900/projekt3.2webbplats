@@ -163,7 +163,8 @@ form label {font-size: 1.2em; font-weight: 500;}
 form input {padding:2%;
     border:1px solid #ccc;
     border-radius: 5px;
-width:40%; height:auto;}
+    width:40%; 
+    height:auto;}
 
 /*The text has been given text size, bold style and line height.*/
 .logintext {font-size: 1em;

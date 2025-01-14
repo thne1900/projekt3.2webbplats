@@ -360,7 +360,7 @@ icons have been resized and some objects are hidden.*/
     .card {grid-area: 4/1/5/4; border-radius: 0;margin-bottom: 8%;}
     i.fa-camera {display: none;}
     #cardtext{display:none;}
-    .card p {font-size: 1em; text-align: center;}
+    .card p {font-size: 1em; text-align: center;padding-left: 0%;}
     .footer {grid-area:6/1/7/4;}
     footer {font-size: 0.7em;}
 }
