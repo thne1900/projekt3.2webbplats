@@ -178,7 +178,6 @@ form {text-align: center;
     line-height: 1.6;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top:4%;
     margin-bottom: 8%;}
 
 /*The fieldset has been given a background color, rounded edges, padding and shading.*/
@@ -188,8 +187,8 @@ fieldset {background-color: #B4BBDF;
     padding-bottom: 4%;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
 
-/*Legend has been given text size and bold style.*/
-legend {font-size: 1.5em; font-weight: bold;}
+/*Legend has been given text size, bold style and padding.*/
+legend {font-size: 1.5em; font-weight: bold;padding-top: 15%;}
 
 /*The inputs have received padding, rounded coloring edges.*/
 input {padding:1%;
