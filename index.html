@@ -3,6 +3,9 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
+    <meta name="description" content="Färdtjänstbokning för dig som har rätt att använda denna tjänst. 
+    Här finner du dina egna sidor, möjligheter att boka, avboka och ändra dina resor. 
+    Lättillgänglig information och tillgång till aktuella kontaktuppgifter. "><!--keywords for search engines-->
     <title>Färdtjänstbokning</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/index.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
@@ -34,17 +37,17 @@
 </figure>
 <!--Div element for a grid container for the element's locations.-->
 <div class="grid-container">
-<!--section element to contain header and form.-->
-<section class="login">
-<h3>Användare: <i class="fa-solid fa-user"></i></h3>
-<form><!--Form to log in with username and password-->
+<!--Form element to log in with username and password, contain fieldset, legend, labels, inputs and button.-->
+<form class="login">
+<fieldset>
+<legend>Användare: <i class="fa-solid fa-user"></i></legend>
 <label for="username">Användarnamn:</label>
 <input type="text" name="username" id="username" placeholder="Användarnamn">
 <br>
 <br>
 <label for="password">Lösenord:</label>
 <input type="password" name="password" id="password" placeholder="Lösenord">
-</form>
+<br>
 <br>
 <!--Button to log in to "Mina sidor".-->
 <button class="click-login" id="click.login" type="button">Logga in</button>
@@ -55,7 +58,8 @@
     </script>
 <p class="logintext">Denna tjänst riktar sig till dig som har ett beviljat färdtjänsttillstånd. 
     På webbplatsen kan du boka, avboka och ändra dina resor.</p>
-</section>
+</fieldset>
+</form>
 <!--section element for text and a button-->
 <section class="new">
 <h3 class="newtext">Ny användare eller vill veta mer?</h3>
