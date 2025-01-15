@@ -180,80 +180,107 @@ bold style and centered text.*/
         font-weight: bold;
         text-align: center;}
 
-/*The element has been placed with grid area, background color, margins, rounded edges, centered text and line height.*/
+/*The element has been placed with grid area, background color, margins, rounded edges, 
+centered text,line height, padding and box-shadow.*/
 .phone {grid-area:2/1/3/1;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
         background-color: #B4BBDF;
         border-radius: 15px;
-        margin-bottom: 4%;
+        margin-bottom: 8%;
         text-align: center;
         line-height: 1.3;
-        margin-top: 3%;}
+        padding-top: 2%;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
-/* The element has been placed with grid area, background color, margins, rounded edges, centered text and line height.*/      
+/* The element has been placed with grid area, background color, margins, rounded edges, 
+centered text, line height padding and box-shadow.*/      
 .email {grid-area:3/1/4/1;
-        margin-left: 25%;
-        margin-right: 25%;
+        margin-left: 20%;
+        margin-right: 20%;
         background-color: #B4BBDF;
         border-radius: 15px;
         text-align: center;
         line-height: 1.3;
-        margin-bottom: 8%;}
+        margin-bottom: 8%;
+        padding-top:2%;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
 /*The link has been given text size.*/
 .email a{font-size:0.9em;}
 
-/*The form has been placed with a grid area.*/
-form {grid-area:2/2/4/2;margin-right: 25%;margin-bottom: 8%;}
+/* The element has been placed with grid area, background color, margins, rounded edges, 
+centered text, line height paddings and box-shadow.*/ 
+.document {grid-area:4/1/5/1; 
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #B4BBDF;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 8%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
-/*The element has been given a background color, rounded edges, padding and shading.*/
-fieldset {background-color: #B4BBDF;
-        border-radius: 15px;
-        border:0;
-        padding:8%;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
+/*The text has been given font size, padding and line height.*/
+.document p{font-size: 1em;
+    padding-left:4%;
+    padding-right: 4%; 
+    line-height: 1.6; }
 
-/*The element has been given text size, centered text and bold style.*/
-legend {font-size: 1.5em; text-align: center; font-weight: bold;}
+/*The form has been placed with a grid area and given margin.*/
+form {grid-area:2/2/4/2;
+    margin-right: 20%;}
+
+/*The form has properties of background color, rounded edges, padding and shading.*/
+#form {background-color: #B4BBDF;
+    border-radius: 15px;
+    padding-left:8%;
+    padding-right:8%;
+    padding-bottom: 4%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
+
+/*The element does not show any borders and has been given padding.*/
+fieldset {border:0;
+        padding:8%;}
+
+/*The element has been given text size, centered text, bold style and padding.*/
+legend {font-size: 1.5em; 
+    text-align: center; 
+    font-weight: bold; 
+    padding-top:5%;}
 
 /*The elements have been given text size and bold style.*/
 label {font-size: 1.2em; font-weight:500;}
 
-/*The elements have received padding, colored rounded edges.*/
+/*The elements have received padding, colored rounded edges, width and height.*/
 input {padding:2%;
     border:1px solid #ccc;
-    border-radius: 5px;width:50%; height:auto;}
+    border-radius: 5px;
+    width:60%; 
+    height:auto;}
 
-/*The button has been given width, height, background color, margin, text size and bold style.*/
+/*The button has been given width, height, background color, margins, text size, bold style and
+box shadow.*/
 #send {width:40%; 
     height:auto; 
     background-color: white;
-    margin-left: 8%; 
+    margin-left: 30%;
+    margin-top: 4%;
     font-size: 1.1em; 
-    font-weight: 500;}
+    font-weight: bold;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
 /*The button has been given a background color and a "pointing finger" when hovering.*/
-#send:hover  {background-color: rgb(83, 135, 191);
+#send:hover {background-color: rgb(83, 135, 191);
     cursor: pointer;}
-
-/*The button has been given width, height, background color, margin, text size and bold style.*/
-#reset {width:40%; 
-    height:auto; 
-    background-color: white;
-    margin-right:8%; 
-    font-size: 1.1em; 
-    font-weight: 500;}
-
-/*The button has been given a background color and a "pointing finger" when hovering.*/
-#reset:hover  {background-color: rgb(83, 135, 191);
-        cursor: pointer;}
 
 /* The text box has been given width and height.*/  
 textarea {width:100%; height: auto;}
 
 /*Footer has been placed with a grid area.*/ 
-.footer {grid-area:4/1/5/3;}
+.footer {grid-area:5/1/6/3;}
 
 /*The content in the footer has been given text size, background color, padding, centered text and margin.*/
 footer {font-size: 1em;
@@ -284,6 +311,13 @@ and elements have been given a different text size and margins.*/
     h1 {font-size: 2em;}
     .phone {font-size: 1em;margin-left:15%;margin-right:15%;}
     .email {font-size: 1em;margin-left:15%;margin-right:15%;}
+    .email a {font-size: 0.8em;}
+    .document {font-size: 0.9em;margin-left:15%;margin-right:15%;}
+    input {width:80%; height:auto;}
+    textarea {width:90%; height: auto;}
+    h2{font-size: 1.4em;}
+    legend{font-size: 1.3em;}
+    
 }
 /*Media rule with a breakpoint of 600 pixels: the logo becomes hidden and another one becomes visible, 
 header has been given a different size and position, elements have been given a different position in the column, 
@@ -296,10 +330,15 @@ changed text size and sharp edges.*/
         .intro {grid-area:1/1/2/3;margin-left:8%; margin-right:8%;font-size: 1.1em;}
         .phone {grid-area:2/1/3/3;margin-left:4%; margin-right:4%;border-radius: 0;}
         .email {grid-area:3/1/4/3;margin-left:4%; margin-right:4%;border-radius: 0;}
-        form {grid-area:4/1/5/3;margin-left:auto;margin-right:auto;margin-bottom: 8%;}
+        .document {grid-area: 5/1/6/3;border-radius: 0;}
+        .document p{font-size:0.9em;padding-left:8%;padding-right: 8%;}
+        form {grid-area:4/1/5/3;margin-left:4%;margin-right:4%;margin-bottom: 8%;}
+        #form {border-radius: 0;}
+        h2 {font-size: 1.3em;}
         fieldset {border-radius: 0;}
         legend {font-size: 1.3em;}
         label{font-size: 1.1em;}
-        .footer {grid-area:5/1/6/3;}
+        input{width:95%; height:auto;}
+        .footer {grid-area:6/1/7/3;}
         footer {font-size: 0.7em;}
 }

@@ -92,11 +92,13 @@ margin-bottom: 4%;
 text-shadow: 4px 4px 6px rgb(0,0,0,0.9);}
 
 /*The legend has been given a bold style, centered text and font-size.*/
-legend {font-weight: 500;
-text-align: center; font-size: 1.3em;}
+legend {font-weight: bold;
+    text-align: center; 
+    font-size: 1.3em;}
 
 /*Fieldset has been given no border and padding.*/
-fieldset {border:0; padding:8%;}
+fieldset {border:0; 
+        padding:8%;}
 
 /*A grid container with rows, columns and gaps in between.*/
 .grid-container {display: grid;
@@ -154,17 +156,25 @@ section button {color:black;
         margin-top: 4%;}
 
 /*When hovering over buttons, the background color becomes blue and a "pointing finger"*/
-button:hover {background-color: rgb(83, 135, 191);cursor: pointer;}
+button:hover {background-color: rgb(83, 135, 191);
+    cursor: pointer;}
 
-/*the element label in the form has been given text size and bold style.*/
-form label {font-size: 1.2em; font-weight: 500;}
+/*the element label in the form has been given text size, bold style and margin.*/
+form label {font-size: 1.2em; 
+    font-weight: 500; 
+    margin-left: 25%;}
 
-/*The input elements have received padding and a rounded colored edge.*/
+/*The input elements have received padding, a rounded colored edge, width, height, flexbox and margin.*/
 form input {padding:2%;
     border:1px solid #ccc;
     border-radius: 5px;
-    width:40%; 
-    height:auto;}
+    width:50%; 
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;}
 
 /*The text has been given text size, bold style and line height.*/
 .logintext {font-size: 1em;
@@ -188,12 +198,14 @@ form input {padding:2%;
 /*Footer has been placed with a grid area.*/
 .footer {grid-area:4/1/5/4;}
 
-/*The content in the footer has been given text size, background color, padding, centered text and margin.*/
+/*The content in the footer has been given text size, background color, padding, centered text, margin
+and line-height.*/
 footer {font-size: 1em;
     background-color: #B4BBDF;
     padding:1%;
     text-align: center;
-    margin-bottom:0;}
+    margin-bottom:0;
+    line-height:1;}
 
 /*Media rule for break point at 1024px to 600px: Headings got different sizes and placement. 
 Sections, the form, text and buttons have been given a different location and appearance.*/
@@ -203,9 +215,9 @@ Sections, the form, text and buttons have been given a different location and ap
         h2{font-size:1.5em;}
         h3 {font-size: 1.3em;}
         .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
-        form label {/*padding-left:auto;padding-right:auto;*/ font-size: 1.1em;}
-        form input {padding:1%;}
+        form label {font-size: 1.1em;}
         .click-login {margin-left: 33%;}
+        .click-contact{margin-left: 33%;}
         .logintext {margin-left: 20%; margin-right: 20%;}
         .new {grid-area:3/1/4/4; margin-left:15%; margin-right:15%; max-width:100%; height:auto;}
     }
@@ -226,13 +238,12 @@ text sizes change, some elements become hidden and some elements get different p
     h3 {font-size: 0.9em; font-weight: bold;}
     .logintext {display: none;}
     form label{font-size: 0.9em;}
-    form input {padding:1%;}
     .login {border-radius:0; grid-area:1/1/2/4; margin-left:4%; margin-right:4%;padding:8%;}
     .new {grid-area: 3/1/4/4; margin-left:4%; margin-right:4%; border-radius:0;}
     .newtext { font-size: 1em;}
     .click-login{font-size: 1em; margin-left: 33%;}
     .click-contact {margin-left: 30%;font-size: 1em;}
     .footer {grid-area:5/1/6/4;}
-    footer {font-size:0.7em;}
+    footer {font-size:0.9em;}
 }
     
