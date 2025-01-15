@@ -203,7 +203,7 @@ Sections, the form, text and buttons have been given a different location and ap
         h2{font-size:1.5em;}
         h3 {font-size: 1.3em;}
         .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
-        form label {padding-left:auto;padding-right:auto; font-size: 1.1em;}
+        form label {/*padding-left:auto;padding-right:auto;*/ font-size: 1.1em;}
         form input {padding:1%;}
         .click-login {margin-left: 33%;}
         .logintext {margin-left: 20%; margin-right: 20%;}

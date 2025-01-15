@@ -148,7 +148,7 @@ a "pointing finger", sizes and margin.*/
 /*A grid container with rows, columns and gaps in between.*/
 .grid-container {display: grid;
                 grid-template-rows: auto;
-                grid-template-columns:repeat(1fr 2fr 1fr);
+                grid-template-columns:repeat(2, 1fr);
                 grid-column-gap:2%;}
 
 /*The main heading has been given text size, centered text and margin.*/
@@ -160,9 +160,9 @@ h2{font-size: 1.6em; text-align: center; margin-top: 0;}
 /*The element has been placed in the grid container and given margins, 
 black border, background color and paddings.*/
 .booking-confirmation {grid-row-start: 1;
-                    grid-column-start: 2;
+                    grid-column-start: 1;
                     grid-row-end: 1;
-                    grid-column-end: 2;
+                    grid-column-end: 3;
                     margin-left:20%;
                     margin-right: 20%;
                     border: 4px solid black;
