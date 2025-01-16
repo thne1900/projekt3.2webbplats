@@ -3,7 +3,8 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <title>Färdtjänstbokning</title><!--title of the website-->
+    <meta name="description" content="Tillgänglighetsredogörelse, som beskriver hur Färdtjänstbokning arbetar för att säkerställa tillgängligheten."><!--keywords for search engines-->
+    <title>Tillgänglighetsredogörelsen</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/accessibility.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
     <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png"><!--website favicon-->
@@ -17,14 +18,13 @@
 <header>
     <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bild med text"></a><!--Logo for desktop and tablet-->
     <a href="mypages.html"><img src="bilder/bil.png" id="car" alt="Svart bil"></a><!--Logo for mobile phone-->
-        <!--<div class="menu.resp">Class containing menu navigation-->
             <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
-               <span class="menu-icon"><!--designing the appearance of the menu-->
+               <span class="menu-icon">
                    <span class="bars"></span>
                    <span class="bars"></span>
                    <span class="bars"></span>
                </span>
-               <span class="menu-text">MENY</span><!--text visible for menu-->
+               <span class="menu-text">MENY</span>
            </button>
            <nav id="nav-menu"><!--navigation menu-->
                <button class="menu-btn close" id="close-menu"><!--Button to close the menu-->
@@ -32,7 +32,7 @@
                        <span class="bars cross1"></span>
                        <span class="bars cross2"></span>
                    </span>
-                   <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
+                   <span class="menu-text">STÄNG MENY</span>
                </button>
 <ul class="menu"><!--An unsorted list of the menu choices with icons.-->
     <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
@@ -42,14 +42,12 @@
     <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
     </ul>
     </nav>
-    <script>//javascript for functions for menu navigation.
-        //Variables to access the respective id:
+    <script>//javascript for functions for menu navigation at smaller screen.
            let openButton = document.getElementById("open-menu");
            let closeButton = document.getElementById("close-menu");
-           //added event listeners on the elements
            openButton.addEventListener('click', toggleMenu);
            closeButton.addEventListener('click', toggleMenu);
-           //Function that tells what the menu should do when it is hidden or visible.
+
            function toggleMenu() {
                let navMenuElement = document.getElementById("nav-menu");
                let style = window.getComputedStyle(navMenuElement);
@@ -60,7 +58,6 @@
                }
            }
        </script>
-       <!--</div>-->
     </header>
     <!--Figure element for image with an overlying main heading.-->
     <figure class="header-pic">
@@ -74,15 +71,15 @@
 <!--Section element containing headings, links and texts.-->
 <section class="text">
     <h2>Tillgänglighet för Kungälvs kommuns Färdtjänstbokning</h2>
-        <p>Kungälvs kommun står bakom den här webbplatsen. 
+        <p>Kungälvs kommuns Färdtjänstbokning står bakom den här webbplatsen. 
         Vi vill att så många som möjligt ska kunna använda den. 
-        Det här dokumentet beskriver hur Färdtjänstbokning uppfyller lagen om tillgänglighet till digital offentlig service, 
+        Det här dokumentet beskriver hur Kungälvs kommuns Färdtjänstbokning uppfyller lagen om tillgänglighet till digital offentlig service, 
         eventuella kända tillgänglighetsproblem och hur du kan rapportera brister till oss så att vi kan åtgärda dem.</p>
     <h3>Hur tillgänglig är webbplatsen?</h3>
         <p>Vi är medvetna om att delar av webbplatsen inte är helt tillgängliga. 
         Se avsnittet om innehåll som inte är tillgängligt nedan för mer information.</p>
     <h3>Vad kan du göra om du inte kan använda delar av webbplatsen?</h3>
-    <p>Om du behöver innehåll från Färdtjänstbokning som inte är tillgängligt för dig, 
+    <p>Om du behöver innehåll från Kungälvs kommuns Färdtjänstbokning som inte är tillgängligt för dig, 
         men som är undantaget från lagens tillämpningsområde enligt beskrivning nedan, kan du <a href="contact.html">meddela oss.</a></p>
     <p>Svarstiden är normalt inom 12 timmar. 
     Du kan också kontakta oss på följande sätt:</p>
@@ -97,8 +94,8 @@
         <a href="contact.html">meddela oss</a> så att vi får veta att problemet finns.</p>
     <h3>Tillsyn</h3>
     <p>Myndigheten för digital förvaltning, Digg, har ansvaret för tillsyn över lagen om tillgänglighet till digital offentlig service. 
-        Du kan <a href="https://www.digg.se/">anmäla till Digg</a> om du tycker att vår digitala service har brister i tillgänglighet.
-        Du kan också <a href="https://www.digg.se/">anmäla till Digg</a> om du tycker att vår bedömning av vad som är oskäligt betungande ska granskas, 
+        Du kan <a href="https://www.digg.se/tdosanmalan">anmäla till Digg</a> om du tycker att vår digitala service har brister i tillgänglighet.
+        Du kan också <a href="https://www.digg.se/tdosanmalan">anmäla till Digg</a> om du tycker att vår bedömning av vad som är oskäligt betungande ska granskas, 
         om du tycker att vår tillgänglighetsredogörelse har brister eller om du tycker att vi inte har 
         hanterat din begäran om tillgängliggörande korrekt.
         </p>
@@ -123,14 +120,17 @@
             </p>
             <h3>Hur vi testat webbplatsen</h3>
             <p>Vi har uppskattat tillgängligheten utan granskning.
-                Senaste bedömningen gjordes den ........
-                Redogörelsen uppdaterades senast den ........
+                Senaste bedömningen gjordes den 2025-01-15.
+                Webbplatsen publicerades den 2025-01-19.
+                Redogörelsen uppdaterades senast den 2025-01-15.
                 </p>
             </section>
             <!--Footer element with contact details and availability statement.-->
             <footer class="footer">
-                <p><strong>Kontaktuppgifter:</strong>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-                © Copyright 2024•Kungälvs kommun Färdtjänstresor. <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+                <p><strong><i class="fa-solid fa-phone"></i> Telefon:</strong> 0303-2200XX 
+                <p><strong><i class="fa-solid fa-at"></i> Email:</strong> <a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a></p>
+                <p><strong>Dokument:</strong> <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+                <p>© Copyright 2024 • Kungälvs kommun Färdtjänstresor.</p>
             </footer>
             </div>
             </body>

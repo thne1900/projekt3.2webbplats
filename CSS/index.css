@@ -78,18 +78,18 @@ header {background-color:#B4BBDF;
     
 /*The main heading (h1) has been given text size, text color, shading, centered text and margin.*/
 h1 {font-size: 2em;
-    color:white;
-    text-shadow: 4px 4px 6px rgb(0,0,0,0.9);
+    color:black;
+    text-shadow: 2px 2px 4px white;
     text-align: center;
     margin-bottom:0.5%;}
 
 /*The subheading (h2) has been given text size, color, margin, centered text and shading.*/
 h2 {font-size: 1.8em;
-color:white;
+color:black;
 margin-top: 0.5%;
 text-align: center;
 margin-bottom: 4%;
-text-shadow: 4px 4px 6px rgb(0,0,0,0.9);}
+text-shadow: 2px 2px 4px white;}
 
 /*The legend has been given a bold style, centered text and font-size.*/
 legend {font-weight: bold;
@@ -107,7 +107,7 @@ fieldset {border:0;
     grid-column-gap: 2%;}
 
 /*The login section has been placed in a grid container and given padding, width, 
-height, background color, rounded edges and margin.*/
+height, background color, rounded edges, margin and box-shadow.*/
 .login {grid-row-start: 1;
     grid-column-start: 2;
     grid-row-end: 2;
@@ -117,7 +117,8 @@ height, background color, rounded edges and margin.*/
     height:auto;
     background-color:#B4BBDF;
     border-radius:15px;
-    margin-bottom: 25px;}
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
 /*The button have been given a background color, size, bold style, rounded edges, padding, shading and margin.*/
 form button {color:black;
@@ -181,14 +182,15 @@ form input {padding:2%;
     font-weight: 600;
     line-height: 1.6;}
 
-/*The section has been placed with grid area, padding, width, height background color, rounded edges and margin.*/
+/*The section has been placed with grid area, padding, width, height background color, rounded edges, margin and box-shadow.*/
 .new {grid-area:3/2/4/2;
     padding:4%;
     max-width:100%;
     height:auto;
     background-color:#B4BBDF;
     border-radius:15px;
-    margin-bottom: 8%;}
+    margin-bottom: 8%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
 /*The text in section has been given text size, centered placement and bold style.*/
 .newtext {font-size: 1.1em;
@@ -198,14 +200,15 @@ form input {padding:2%;
 /*Footer has been placed with a grid area.*/
 .footer {grid-area:4/1/5/4;}
 
-/*The content in the footer has been given text size, background color, padding, centered text, margin
-and line-height.*/
+/*The content in the footer has been given text size, background color, padding, centered text, margin,
+line-height and box-shadow.*/
 footer {font-size: 1em;
     background-color: #B4BBDF;
     padding:1%;
     text-align: center;
     margin-bottom:0;
-    line-height:1;}
+    line-height:1;
+    box-shadow:0px -3px 3px 0px rgba(0,0,0,1);}
 
 /*Media rule for break point at 1024px to 600px: Headings got different sizes and placement. 
 Sections, the form, text and buttons have been given a different location and appearance.*/
@@ -217,7 +220,7 @@ Sections, the form, text and buttons have been given a different location and ap
         .login {grid-area:1/1/2/4; margin-left:15%;margin-right:15%;}
         form label {font-size: 1.1em;}
         .click-login {margin-left: 33%;}
-        .click-contact{margin-left: 33%;}
+        .click-contact{margin-left: 32%;}
         .logintext {margin-left: 20%; margin-right: 20%;}
         .new {grid-area:3/1/4/4; margin-left:15%; margin-right:15%; max-width:100%; height:auto;}
     }

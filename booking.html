@@ -3,7 +3,9 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <title>Färdtjänstbokning</title><!--title of the website-->
+    <meta name="description" content="Boka resa, fyll i ett formulär med destination, datum, tid och intervall.
+    Möjlighet att lägga till egna tillval"><!--keywords for search engines-->
+    <title>Boka resa</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/booking.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
     <link rel="icon" type="image/png" sizes="16x16"  href="bilder/favicon-16x16.png"><!--website favicon-->
@@ -17,14 +19,13 @@
 <header>
     <a href="mypages.html"><img src="bilder/logga.png" id="logo" alt="Svart bil med text"></a><!--Logo for desktop and tablet-->
     <a href="mypages.html"><img src="bilder/bil.png" id="car" alt="Svart bil"></a><!--Logo for mobile phone-->
-        <!--<div class="menu.resp">Class containing menu navigation-->
             <button class="menu-btn open" id="open-menu"><!--menu button to drop down the menu-->
-               <span class="menu-icon"><!--designing the appearance of the menu-->
+               <span class="menu-icon">
                    <span class="bars"></span>
                    <span class="bars"></span>
                    <span class="bars"></span>
                </span>
-               <span class="menu-text">MENY</span><!--text visible for menu-->
+               <span class="menu-text">MENY</span>
            </button>
            <nav id="nav-menu"><!--navigation menu-->
                <button class="menu-btn close" id="close-menu"><!--Button to close the menu-->
@@ -32,24 +33,35 @@
                        <span class="bars cross1"></span>
                        <span class="bars cross2"></span>
                    </span>
-                   <span class="menu-text">STÄNG MENY</span><!--text that appears to close-->
+                   <span class="menu-text">STÄNG MENY</span>
                </button>
 <ul class="menu"><!--An unsorted list of the menu choices with icons.-->
-    <li><a href="mypages.html"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
-    <li><a href="booking.html"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
-    <li><a href="cancel.html"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
-    <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
-    <li><a href="contact.html"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
+    <li><a href="mypages.html" class="item-active"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    <li><a href="booking.html" class="item-active"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
+    <li><a href="cancel.html" class="item-active"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
+    <li><a href="about.html" class="item-active"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
+    <li><a href="contact.html" class="item-active"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
     </ul>
     </nav>
-    <script>//javascript for functions for menu navigation.
-        //Variables to access the respective id:
+    <script>//Javascript for the function on "active". Make sure that as long as a visitor is on the page, active is activated.
+        document.addEventListener("DOMContentLoaded", function(){
+    
+        const itemActive=document.querySelectorAll(".item-active");
+        const currentLocation=window.location.href;
+        itemActive.forEach(item=>{
+            if(item.href===currentLocation) {
+    
+                item.classList.add("active");
+            }
+        });
+    });
+        </script>
+    <script>//javascript for functions for menu navigation at smaller screen.
            let openButton = document.getElementById("open-menu");
            let closeButton = document.getElementById("close-menu");
-           //added event listeners on the elements
            openButton.addEventListener('click', toggleMenu);
            closeButton.addEventListener('click', toggleMenu);
-           //Function that tells what the menu should do when it is hidden or visible.
+           
            function toggleMenu() {
                let navMenuElement = document.getElementById("nav-menu");
                let style = window.getComputedStyle(navMenuElement);
@@ -60,7 +72,6 @@
                }
            }
        </script>
-       <!--</div>-->
     </header>
     <!--Figure element for image with an overlying main heading.-->
     <figure class="header-pic">
@@ -138,9 +149,11 @@
 </form>
 <!--Footer element with contact details and availability statement.-->
 <footer class="footer">
-    <p><strong>Kontaktuppgifter:</strong>Telefon:0303-2200XX Email:<a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a><br>
-    © Copyright 2024•Kungälvs kommun Färdtjänstresor. <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
-</footer>    
+    <p><strong><i class="fa-solid fa-phone"></i> Telefon:</strong> 0303-2200XX 
+    <p><strong><i class="fa-solid fa-at"></i> Email:</strong> <a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a></p>
+    <p><strong>Dokument:</strong> <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
+    <p>© Copyright 2024 • Kungälvs kommun Färdtjänstresor.</p>
+</footer>  
 </div>
 </body>
 </html>

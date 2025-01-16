@@ -127,11 +127,12 @@ a "pointing finger", sizes and margin.*/
     line-height: 1.5;
     color: black;}
 
-/*The button to close has been given margin, padding, backgroundcolor and text centered.*/    
+/*The button to close has been given margin, padding, backgroundcolor, text centered and margin.*/    
 .close {margin: 1em 1.5em;
-padding: 10px 15px;
-background-color: #D3E6FE;
-text-align: center;}
+    padding: 10px 15px;
+    background-color: #D3E6FE;
+    text-align: center;
+    margin-left:20%;}
         
 /*The cross on the close button gets size, design, position and placement.*/       
 .cross1 {width: 25px;
@@ -171,12 +172,15 @@ section p {font-size: 1.2em;line-height: 1.6;}
 /*Footer has been placed with a grid area.*/
 .footer{grid-area: 3/1/4/4;}
 
-/*The content in the footer has been given text size, background color, padding, centered text and margin.*/
+/*The content in the footer has been given text size, background color, padding, centered text, margin,
+line-height and box-shadow.*/
 footer {font-size: 1em;
     background-color: #B4BBDF;
     padding:1%;
     text-align: center;
-    margin-bottom:0;}
+    margin-bottom:0;
+    line-height:1;
+    box-shadow:0px -3px 3px 0px rgba(0,0,0,1);}
 
 /*Media rule, breakpoint 1024px, controls what should be shown or not on the menu.*/
 @media only screen and (min-width: 1024px){
@@ -209,6 +213,6 @@ elements have been given a different position (column) and margin. Text has been
     h1{font-size: 1.2em;} 
     .cancelconfirmation {grid-area:1/1/2/4;margin-left:4%; margin-right:4%;}
     .cancelconfirmation p {font-size:1em;padding-left:4%;padding-right:4%;}
-    footer {font-size: 0.7em;}
+    footer {font-size: 0.9em;}
                 
 }

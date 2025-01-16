@@ -3,9 +3,8 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1"><!--the page should be displayed in natural size.-->
-    <meta name="description" content="Färdtjänstbokning för dig som har rätt att använda denna tjänst. 
-    Här finner du dina egna sidor, möjligheter att boka, avboka och ändra dina resor. 
-    Lättillgänglig information och tillgång till aktuella kontaktuppgifter. "><!--keywords for search engines-->
+    <meta name="description" content="Kungälvs kommuns Färdtjänstbokning. 
+    Inloggningssida för dig som har rätt att använda färdtjänst och vill boka dina resor."><!--keywords for search engines-->
     <title>Färdtjänstbokning</title><!--title of the website-->
     <link rel="stylesheet" type="text/css" href="CSS/index.css"><!--css file-->
     <link rel="icon" type="image/ico"  href="bilder/bil.ico">
@@ -42,15 +41,14 @@
 <fieldset>
 <legend>Användare: <i class="fa-solid fa-user"></i></legend>
 <label for="username">Användarnamn:</label>
-<input type="text" name="username" id="username" placeholder="Användarnamn">
+<input type="text" name="username" id="username" placeholder="Användarnamn" autocomplete="username">
 <br>
 <label for="password">Lösenord:</label>
-<input type="password" name="password" id="password" placeholder="Lösenord">
+<input type="password" name="password" id="password" placeholder="Lösenord" autocomplete="current-password">
 <br>
-<!--<br>-->
 <!--Button to log in to "Mina sidor".-->
 <button class="click-login" id="click.login" type="button">Logga in</button>
-<script>
+<script>//code that reaches the button, when clicked takes a visitor to a page.
     document.getElementById("click.login").addEventListener("click", function(){ 
         window.location.href="mypages.html";
     });
@@ -64,7 +62,7 @@
 <h3 class="newtext">Ny användare eller vill veta mer?</h3>
 <!--Button to "Kontakta oss".-->
 <button class="click-contact" id="click.contact" type="button">Kontakta oss</button>
-<script>
+<script>//code that reaches the button, when clicked takes a visitor to a page.
     document.getElementById("click.contact").addEventListener("click", function(){ 
         window.location.href="contact.html";
     });
@@ -76,7 +74,6 @@
     <p><strong><i class="fa-solid fa-at"></i> Email:</strong> <a href="mailto:thne1900@student.miun.se"> fardtjanstbokning.kungalv@hotmail.com</a></p>
     <p><strong>Dokument:</strong> <a href="accessibility.html">Tillgänglighetsredogörelse</a></p>
     <p>© Copyright 2024 • Kungälvs kommun Färdtjänstresor.</p>
-    
 </footer>
 </div>
 </body>
