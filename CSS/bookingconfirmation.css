@@ -10,17 +10,17 @@ body {background-color:#FFFCFB;
     margin-left: auto;
     margin-right: auto;}
     
-/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+/*The website logo has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -81,8 +81,6 @@ nav a {border-radius:15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     padding:10px;}
-    
-/*nav a:active {background-color: white;}*/
     
 /*The elements have been given rounded edges, background color and shaded edges.*/    
 .menu a {border-radius:15px;
@@ -176,7 +174,7 @@ black border, background color and paddings.*/
                     margin-top: 4%;}
 
 /*The text has been given size and line height.*/
-section p {font-size: 1.1em;
+article p {font-size: 1.1em;
             line-height: 1;}
 
 /*A text section has been given size, italic style, line height and centered text.*/
@@ -220,7 +218,7 @@ footer {font-size: 1em;
 }
 /*Media rule at breakpoints between 1024 and 600px: Elements get resized, text sizes change and margins decrease.*/
 @media (max-width:1024px) and (min-width:600px) {
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height:auto;}
     h1 {font-size: 1.8em;}
     h2 {font-size: 1.5em;}
     .booking-confirmation { margin-left:15%;margin-right: 15%;}
@@ -228,16 +226,14 @@ footer {font-size: 1em;
     .textobject2 {font-size: 1.1em;}
 }
 
-/*
-Media rule at breakpoint of 600px: The logo becomes hidden and another one becomes visible, 
+/*Media rule at breakpoint of 600px: The logo has been given sizes, 
 text sizes change, elements get a different position, margin and padding are adjusted.*/
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%; width:25%; height:auto; border-radius: 0;}
     h1{font-size: 1.6em;}
     h2{font-size: 1.2em;}
     .booking-confirmation {grid-area:1/1/2/3;margin-left:4%;margin-right: 4%; padding-left: 8%;}
-    section p {font-size: 1em;}
+    article p {font-size: 1em;}
     .textobject1 {font-size: 1.1em;}
     .textobject2 {font-size: 1.1em;}
     .footer {grid-area:3/1/4/3;}

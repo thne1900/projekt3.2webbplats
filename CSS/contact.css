@@ -10,17 +10,17 @@ body {background-color:#FFFCFB;
     margin-left: auto;
     margin-right: auto;}
     
-/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+/*The website logo has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}    
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -251,7 +251,8 @@ legend {font-size: 1.5em;
     padding-top:5%;}
 
 /*The elements have been given text size and bold style.*/
-label {font-size: 1.2em; font-weight:500;}
+label {font-size: 1.2em; 
+    font-weight:500;}
 
 /*The elements have received padding, colored rounded edges, width and height.*/
 input {padding:2%;
@@ -312,7 +313,7 @@ footer {font-size: 1em;
 the logo has been given a different position, heading a different size 
 and elements have been given a different text size and margins.*/
 @media (max-width:1024px) and (min-width:600px) {
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height:auto;}
     h1 {font-size: 2em;}
     .phone {font-size: 1em;margin-left:15%;margin-right:15%;}
     .email {font-size: 1em;margin-left:15%;margin-right:15%;}
@@ -324,12 +325,11 @@ and elements have been given a different text size and margins.*/
     legend{font-size: 1.3em;}
     
 }
-/*Media rule with a breakpoint of 600 pixels: the logo becomes hidden and another one becomes visible, 
+/*Media rule with a breakpoint of 600 pixels: the logo and the 
 header has been given a different size and position, elements have been given a different position in the column, 
 changed text size and sharp edges.*/
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%; width:25%; height:auto; border-radius: 0;}
         h1 {font-size: 1.6em;}
         .overlay-text{top:25%;}
         .intro {grid-area:1/1/2/3;margin-left:8%; margin-right:8%;font-size: 1.1em;}

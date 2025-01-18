@@ -10,17 +10,17 @@ body {background-color:#FFFCFB;
     margin-left: auto;
     margin-right: auto;}
     
-/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+/*The website logo has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}   
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -182,7 +182,7 @@ padding, margin, centered text, height, width and box-shadow.*/
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);}
 
 /* The text has been resized.*/      
-.canceltrip p {font-size: 1.2em;}
+.canceltrip p {font-size: 1.1em;}
 
 /*The button has properties such as, text size, background color, bold style, width, height, 
 padding, margin and box-shadow.*/
@@ -235,18 +235,17 @@ footer {font-size: 1em;
 /*Media rule with a break point between 1024 and 600 pixels: the logo has been repositioned, 
 headings have been resized and elements have been resized and rounded edges have been removed.*/
 @media (max-width:1024px) and (min-width:600px) {
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height: auto;}
     h1{font-size: 2em;}
     h2{font-size: 1.5em;}
     .canceltrip {width:80%;border-radius: 0;}
     }
     
-/* Media rule with a break point of 600 pixels: the logo has been removed and another one is visible, 
+/* Media rule with a break point of 600 pixels: the logo has been given sizes, 
 headings have been given a different size and position, elements have been given a position, margin, 
 and rounded edges have been removed and the button has been given a different text size.*/            
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%; width:25%; height:auto; border-radius: 0;}
     h1 {font-size: 1.6em;}
     h2{font-size: 1.3em;}
     .overlay-text{top:25%;}

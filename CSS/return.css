@@ -10,17 +10,17 @@ body {background-color:#FFFCFB;
     margin-left: auto;
     margin-right: auto;}
     
-/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+/*The website logo has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -96,8 +96,6 @@ nav a {border-radius:15px;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
         text-decoration: none;
         padding:10px;}
-    
-/*nav a:active {background-color: white;}*/
 
 /*The elements have been given rounded edges, background color and shaded edges.*/    
 .menu a {border-radius:15px;
@@ -180,7 +178,9 @@ h2{text-align: center;}
     border-radius: 15px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
 
-.trip p {font-size: 1.1em; text-align: center; }
+/*The text has been given font-size and centered text*/
+.trip p {font-size: 1.1em; 
+    text-align: center; }
 
 /*Placement of the (form)element in the grid container.*/
 .booking {grid-area: 2/1/3/3;}
@@ -191,7 +191,6 @@ form {text-align: center;
     line-height: 1.6;
     margin-left: 25%;
     margin-right: 25%;
-    /*margin-top:4%;*/
     margin-bottom: 8%;}
 
 /*The fieldset has been given a background color, rounded edges, padding and shading.*/
@@ -202,7 +201,9 @@ fieldset {background-color: #B4BBDF;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.71);}
 
 /*Legend has been given text size and bold style.*/
-legend {font-size: 1.5em; font-weight: bold; padding-top:15%;}
+legend {font-size: 1.5em; 
+    font-weight: bold; 
+    padding-top:15%;}
 
 /*The inputs have received padding, rounded coloring edges.*/
 input {padding:1%;
@@ -216,16 +217,23 @@ input {padding:1%;
     font-size: 0.9em;}
 
 /*Properties of the element with text size, bold style, width and height.*/
-#date {font-size: 1em; font-weight: bold; width:25%; height:auto;}
+#date {font-size: 1em; 
+    font-weight: bold; 
+    width:25%; 
+    height:auto;}
 
 /*Properties of the element with text size, bold style, width and height.*/
-#time {font-size:1em; font-weight: bold; width:15%; height:auto;}
+#time {font-size:1em; 
+    font-weight: bold; 
+    width:15%; 
+    height:auto;}
 
 /*Properties of the element with text size, background color, colored rounded edges.*/
 #interval {font-size: 1em;
     background-color: white;
     border:1px solid #ccc;
     border-radius: 5px;}
+
 /* Properties of the element with padding, width, height and text size.*/  
 #else {padding:1.5%; 
     width:25%; 
@@ -249,7 +257,7 @@ input {padding:1%;
         box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
 
 /*The button has been given a background color and "pointing finger" when hovering.*/
-.confirm:hover { background-color: rgb(83, 135, 191);
+.confirm:hover {background-color: rgb(83, 135, 191);
     cursor: pointer;}
 
 /*The button has been given a background color and "pointing finger" when hovering.*/
@@ -293,7 +301,7 @@ footer {font-size: 1em;
 /*Media rule at break point between 1024 and 600 pixels: the logo has been placed differently, 
 the main heading has been resized and the form has had its text size and margin changed.*/
 @media (max-width:1024px) and (min-width:600px){
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height: auto;}
     h1 {font-size: 2em;}
     form {font-size: 1.1em; margin-left: 15%; margin-right:15%;}
     .trip {margin-left:15%;margin-right:15%;}
@@ -302,8 +310,7 @@ the main heading has been resized and the form has had its text size and margin 
 /*Media rule at breakpoint of 600px: Some elements have been repositioned, some have been hidden, 
 the text size has changed and the elements have been placed in a column.*/
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%; width:25%; height: auto; border-radius: 0;}
     h1 {font-size: 1.6em;}
     h2 {font-size: 1.3em;}
     .overlay-text{top:25%;}

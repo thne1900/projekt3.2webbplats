@@ -10,17 +10,17 @@ body {background-color:#FFFCFB;
     margin-left: auto;
     margin-right: auto;}
     
-/*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
+/*The website logo has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -81,8 +81,6 @@ nav a { border-radius:15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     text-decoration: none;
     padding:10px;}
-
-/*nav a:active {color: white;}*/
     
 /*The elements have been given rounded edges, background color and shaded edges.*/    
 .menu a {border-radius:15px;
@@ -167,7 +165,8 @@ padding, margin, centered text and background color.*/
                     background-color: white;}
 
 /*The text has been given size and line height.*/
-section p {font-size: 1.2em;line-height: 1.6;}
+.cancelconfirmation p {font-size: 1.2em;
+    line-height: 1.6;}
 
 /*Footer has been placed with a grid area.*/
 .footer{grid-area: 3/1/4/4;}
@@ -197,19 +196,18 @@ footer {font-size: 1em;
     nav li {display: inline;padding: 1.2em 0;}
 }
 
-/*Media rule at the break point between 1024 and 600 pixels: the logo has been given a different position, 
+/*Media rule at the break point between 1024 and 600 pixels: the logo has been given sizes, 
 the title has been given a different size and the text has been given a changed size and padding.*/
 @media (max-width:1024px) and (min-width:600px) {
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height:auto;}
     h1 {font-size: 1.3em;}
     .cancelconfirmation p{font-size: 1.1em;padding-left:4%;padding-right:4%;}
 }
-/*
-Media rule at the break point of 600 pixels: the logo has been hidden and another logo has become visible, the title has been resized, 
+
+/*Media rule at the break point of 600 pixels: the logo has been given sizes, the title has been resized, 
 elements have been given a different position (column) and margin. Text has been given a different size and padding.*/
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%;width:25%;height:auto;border-radius: 0;}
     h1{font-size: 1.2em;} 
     .cancelconfirmation {grid-area:1/1/2/4;margin-left:4%; margin-right:4%;}
     .cancelconfirmation p {font-size:1em;padding-left:4%;padding-right:4%;}

@@ -13,14 +13,14 @@ body {background-color:#FFFCFB;
 /*The website logo (desktop and tablet) has been given position, placement, rounded corners, height and width.*/
 #logo {position:absolute;
     margin-left:auto;
-    margin-left:auto;
+    margin-right:auto;
         top:2.5%;
     border-radius: 15px;
     width:10%;
     height:auto;}
 
-/*The mobile device logo has been hidden.*/
-#car {display: none;}
+/*How the logo should appear.*/
+.desktop-logo {display:block;}
 
 /*The header element has been given backgrundcolor, sizes, placement, box-shadow, margin and padding.*/
 header {background-color:#B4BBDF;
@@ -253,7 +253,7 @@ footer {font-size: 1em;
 /*Media rule with a break point between 1024 and 600 pixels: The logo has been given a different location. 
 Title, text and icon have been resized.*/
 @media (max-width:1024px) and (min-width:600px) {
-    #logo {top:25%;}
+    #logo {top:8%; width:15%; height:auto;}
     h1 {font-size: 2em;}
     .about p {font-size: 1.1em;}
     ul.terms {font-size: 1.1em;}
@@ -261,12 +261,11 @@ Title, text and icon have been resized.*/
     ul.price.list {font-size: 0.9em;}
     i.fa-car {font-size:125px;}
 }
-/*Media rule with a breakpoint of 600 pixels: The logo has been hidden and another one is visible. 
+/*Media rule with a breakpoint of 600 pixels: The logo has been given sizes, 
 Heading has been given a different position and size. 
 Other elements have been given a different position in the column, changed text size, margins, padding and sharp edges.*/
 @media (max-width:600px) {
-    #logo{display:none;}
-    #car {display:block;position:absolute;top:25%;margin-left:0;width:12%;height:auto;}
+    #logo{top:15%; width:25%; height:auto; border-radius: 0;}
     h1 {font-size: 1.6em;}
     .overlay-text{top:25%;}
     .about {grid-area:1/1/2/3;}
