@@ -237,7 +237,7 @@ footer {font-size: 1em;
 list and footer have been given a different size, position, margin and padding.*/
 @media (max-width:600px) {
     #logo{top:15%; width:25%; height:auto; border-radius: 0;}
-    h1 {font-size: 1.6em;}
+    h1 {font-size: 1.3em;}
     .overlay-text{top:25%;}
     .text {grid-area:1/1/2/3; margin-left: 4%;margin-right: 4%;}
     article p {font-size: 1em; padding-left: 4%;padding-right: 4%;}

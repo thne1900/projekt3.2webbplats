@@ -36,22 +36,22 @@
                    <span class="menu-text">STÄNG MENY</span>
                </button>
 <ul class="menu"><!--An unsorted list of the menu choices with icons.-->
-    <li><a href="mypages.html" class="item-active"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
-    <li><a href="booking.html" class="item-active"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
-    <li><a href="cancel.html" class="item-active"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
-    <li><a href="about.html" class="item-active"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
-    <li><a href="contact.html" class="item-active"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
+    <li><a href="mypages.html" class="link-active"><i class="fa-solid fa-user"></i> Mina sidor</a></li>
+    <li><a href="booking.html" class="link-active"><i class="fa-solid fa-circle-check"></i> Boka resa</a></li>
+    <li><a href="cancel.html" class="link-active"><i class="fa-solid fa-xmark"></i> Avboka resa</a></li>
+    <li><a href="about.html" class="link-active"><i class="fa-solid fa-circle-info"></i> Om färdtjänst</a></li>
+    <li><a href="contact.html" class="link-active"><i class="fa-regular fa-envelope"></i> Kontakta oss</a></li>
     </ul>
     </nav>
     <script>//Javascript for the function on "active". Make sure that as long as a visitor is on the page, active is activated.
         document.addEventListener("DOMContentLoaded", function(){
     
-        const itemActive=document.querySelectorAll(".item-active");
-        const currentLocation=window.location.href;
-        itemActive.forEach(item=>{
-            if(item.href===currentLocation) {
+        const linkActive=document.querySelectorAll(".link-active");
+        const presentLocation=window.location.href;
+        linkActive.forEach(link=>{
+            if(link.href===presentLocation) {
     
-                item.classList.add("active");
+                link.classList.add("active");
             }
         });
     });

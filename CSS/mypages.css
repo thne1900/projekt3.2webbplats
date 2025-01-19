@@ -349,7 +349,7 @@ i.fa-address-card {font-size:25px;}
 .booking {width:200px; height:60px; font-size: 1.1em;}
 .canceled {width:200px; height:60px; font-size: 1.1em;}
 .logout {width:220px; height:60px; font-size: 1.1em;}
-.change {width:200px; height:60px; font-size: 1.1em;}
+.change {width:180px; height:60px; font-size: 1em;}
 i.fa-camera {display:none;}
 i.fa-barcode {font-size: 50px; margin:0; padding:0;}
 #cardtext {display: none;}
